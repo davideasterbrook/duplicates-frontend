@@ -1,0 +1,174 @@
+{
+  "name": "Bored Ape Yacht Club",
+  "contractAddress": "0xBC4CA0EdA7647A8aB7C2061c2E118A18a936f13D",
+  "slug": "boredapeyachtclub",
+  "tokens": [
+    "1",
+    "2087",
+    "8817",
+    "232",
+    "5809"
+  ],
+  "folder": "bayc",
+  "nfts": [
+    {
+      "name": "",
+      "description": "",
+      "image": "https://i2.seadn.io/ethereum/0xbc4ca0eda7647a8ab7c2061c2e118a18a936f13d/399ac6f35935d93930b68fa64cd307/5d399ac6f35935d93930b68fa64cd307.png",
+      "imageOriginal": "https://i2.seadn.io/ethereum/0xbc4ca0eda7647a8ab7c2061c2e118a18a936f13d/399ac6f35935d93930b68fa64cd307/5d399ac6f35935d93930b68fa64cd307.png",
+      "attributes": [
+        {
+          "trait_type": "Mouth",
+          "value": "Grin"
+        },
+        {
+          "trait_type": "Clothes",
+          "value": "Vietnam Jacket"
+        },
+        {
+          "trait_type": "Background",
+          "value": "Orange"
+        },
+        {
+          "trait_type": "Eyes",
+          "value": "Blue Beams"
+        },
+        {
+          "trait_type": "Fur",
+          "value": "Robot"
+        }
+      ],
+      "tokenId": "1",
+      "contractAddress": "0xBC4CA0EdA7647A8aB7C2061c2E118A18a936f13D"
+    },
+    {
+      "name": "#2087",
+      "description": "",
+      "image": "https://i2.seadn.io/base/0x7e72abdf47bd21bf0ed6ea8cb8dad60579f3fb50/27130e5ab3b8a6f83e00e5d69804bb/6427130e5ab3b8a6f83e00e5d69804bb.png",
+      "imageOriginal": "https://i2.seadn.io/base/0x7e72abdf47bd21bf0ed6ea8cb8dad60579f3fb50/27130e5ab3b8a6f83e00e5d69804bb/6427130e5ab3b8a6f83e00e5d69804bb.png",
+      "attributes": [
+        {
+          "trait_type": "Mouth",
+          "value": "Bored Cigarette"
+        },
+        {
+          "trait_type": "Background",
+          "value": "Purple"
+        },
+        {
+          "trait_type": "Fur",
+          "value": "Trippy"
+        },
+        {
+          "trait_type": "Eyes",
+          "value": "Angry"
+        }
+      ],
+      "tokenId": "2087",
+      "contractAddress": "0xBC4CA0EdA7647A8aB7C2061c2E118A18a936f13D"
+    },
+    {
+      "name": "#8817",
+      "description": "",
+      "image": "https://i2.seadn.io/matic/0x489bec524376c50ec4687729eee9767604f9df5e/f933d1c6cd84baebeeb1d3aec73996/0bf933d1c6cd84baebeeb1d3aec73996.png",
+      "imageOriginal": "https://i2.seadn.io/matic/0x489bec524376c50ec4687729eee9767604f9df5e/f933d1c6cd84baebeeb1d3aec73996/0bf933d1c6cd84baebeeb1d3aec73996.png",
+      "attributes": [
+        {
+          "trait_type": "Hat",
+          "value": "Spinner Hat"
+        },
+        {
+          "trait_type": "Background",
+          "value": "Orange"
+        },
+        {
+          "trait_type": "Eyes",
+          "value": "Sleepy"
+        },
+        {
+          "trait_type": "Clothes",
+          "value": "Wool Turtleneck"
+        },
+        {
+          "trait_type": "Mouth",
+          "value": "Bored Party Horn"
+        },
+        {
+          "trait_type": "Earring",
+          "value": "Silver Hoop"
+        },
+        {
+          "trait_type": "Fur",
+          "value": "Solid Gold"
+        }
+      ],
+      "tokenId": "8817",
+      "contractAddress": "0xBC4CA0EdA7647A8aB7C2061c2E118A18a936f13D"
+    },
+    {
+      "name": "#232",
+      "description": "",
+      "image": "https://i2.seadn.io/matic/0xa07fb382721c337ff46d62aaf7d9e033104dd0c2/efad5ca63822fa6e791d5d49cb1f02/8cefad5ca63822fa6e791d5d49cb1f02.png",
+      "imageOriginal": "https://i2.seadn.io/matic/0xa07fb382721c337ff46d62aaf7d9e033104dd0c2/efad5ca63822fa6e791d5d49cb1f02/8cefad5ca63822fa6e791d5d49cb1f02.png",
+      "attributes": [
+        {
+          "trait_type": "Eyes",
+          "value": "Sleepy"
+        },
+        {
+          "trait_type": "Hat",
+          "value": "Seaman's Hat"
+        },
+        {
+          "trait_type": "Fur",
+          "value": "Solid Gold"
+        },
+        {
+          "trait_type": "Background",
+          "value": "Army Green"
+        },
+        {
+          "trait_type": "Mouth",
+          "value": "Bored"
+        },
+        {
+          "trait_type": "Clothes",
+          "value": "Smoking Jacket"
+        }
+      ],
+      "tokenId": "232",
+      "contractAddress": "0xBC4CA0EdA7647A8aB7C2061c2E118A18a936f13D"
+    },
+    {
+      "name": "#5809",
+      "description": "",
+      "image": "https://i2.seadn.io/base/0x7e72abdf47bd21bf0ed6ea8cb8dad60579f3fb50/44bfc4aa1c1e43dcdfdd2d1fd23ffc/b044bfc4aa1c1e43dcdfdd2d1fd23ffc.png",
+      "imageOriginal": "https://i2.seadn.io/base/0x7e72abdf47bd21bf0ed6ea8cb8dad60579f3fb50/44bfc4aa1c1e43dcdfdd2d1fd23ffc/b044bfc4aa1c1e43dcdfdd2d1fd23ffc.png",
+      "attributes": [
+        {
+          "trait_type": "Earring",
+          "value": "Gold Hoop"
+        },
+        {
+          "trait_type": "Background",
+          "value": "Blue"
+        },
+        {
+          "trait_type": "Fur",
+          "value": "Solid Gold"
+        },
+        {
+          "trait_type": "Mouth",
+          "value": "Bored"
+        },
+        {
+          "trait_type": "Eyes",
+          "value": "Holographic"
+        }
+      ],
+      "tokenId": "5809",
+      "contractAddress": "0xBC4CA0EdA7647A8aB7C2061c2E118A18a936f13D"
+    }
+  ],
+  "fetchedAt": "2025-07-22T16:13:53.751Z"
+}

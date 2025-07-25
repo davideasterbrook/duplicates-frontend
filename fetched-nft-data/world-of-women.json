@@ -1,0 +1,266 @@
+{
+  "name": "World of Women",
+  "contractAddress": "0xe785E82358879F061BC3dcAC6f0444462D4b5330",
+  "slug": "world-of-women-nft",
+  "tokens": [
+    "1460",
+    "6025",
+    "5672",
+    "977",
+    "2701"
+  ],
+  "folder": "world-of-women",
+  "nfts": [
+    {
+      "name": "WoW #1460",
+      "description": "",
+      "image": "https://i2.seadn.io/ethereum/0xe785e82358879f061bc3dcac6f0444462d4b5330/869cdba3b1b0273c0bd59db236431071.png",
+      "imageOriginal": "https://i2.seadn.io/ethereum/0xe785e82358879f061bc3dcac6f0444462d4b5330/869cdba3b1b0273c0bd59db236431071.png",
+      "attributes": [
+        {
+          "trait_type": "Background",
+          "value": "Dark Emerald"
+        },
+        {
+          "trait_type": "Skin Tone",
+          "value": "Night Goddess"
+        },
+        {
+          "trait_type": "Eyes",
+          "value": "Green To The Right"
+        },
+        {
+          "trait_type": "Hairstyle",
+          "value": "Double Buns"
+        },
+        {
+          "trait_type": "Face Accessories",
+          "value": "Resting Butterfly"
+        },
+        {
+          "trait_type": "Necklace",
+          "value": "WoW Coin"
+        },
+        {
+          "trait_type": "Clothes",
+          "value": "Polka Dot Top"
+        },
+        {
+          "trait_type": "Earrings",
+          "value": "Triple Rings"
+        },
+        {
+          "trait_type": "Mouth",
+          "value": "Surprised"
+        },
+        {
+          "trait_type": "Lips Color",
+          "value": "Purple"
+        }
+      ],
+      "tokenId": "1460",
+      "contractAddress": "0xe785E82358879F061BC3dcAC6f0444462D4b5330"
+    },
+    {
+      "name": "WoW #6025",
+      "description": "",
+      "image": "https://i2.seadn.io/ethereum/0xe785e82358879f061bc3dcac6f0444462d4b5330/7f7e94d232af2f0464999cb63a30f639.png",
+      "imageOriginal": "https://i2.seadn.io/ethereum/0xe785e82358879f061bc3dcac6f0444462d4b5330/7f7e94d232af2f0464999cb63a30f639.png",
+      "attributes": [
+        {
+          "trait_type": "Background",
+          "value": "Orange Yellow"
+        },
+        {
+          "trait_type": "Skin Tone",
+          "value": "Night Goddess"
+        },
+        {
+          "trait_type": "Eyes",
+          "value": "Blue To The Left"
+        },
+        {
+          "trait_type": "Facial Features",
+          "value": "Nose Piercing"
+        },
+        {
+          "trait_type": "Hairstyle",
+          "value": "Long Dark"
+        },
+        {
+          "trait_type": "Necklace",
+          "value": "WoW Coin"
+        },
+        {
+          "trait_type": "Clothes",
+          "value": "Naiade"
+        },
+        {
+          "trait_type": "Earrings",
+          "value": "Classic Hoops"
+        },
+        {
+          "trait_type": "Mouth",
+          "value": "Bubble Gum"
+        },
+        {
+          "trait_type": "Lips Color",
+          "value": "Passion Red"
+        }
+      ],
+      "tokenId": "6025",
+      "contractAddress": "0xe785E82358879F061BC3dcAC6f0444462D4b5330"
+    },
+    {
+      "name": "WoW #5672",
+      "description": "",
+      "image": "https://i2.seadn.io/ethereum/0xe785e82358879f061bc3dcac6f0444462d4b5330/bf8d9ee9d43bdf4bf2a78ca4a19677d4.png",
+      "imageOriginal": "https://i2.seadn.io/ethereum/0xe785e82358879f061bc3dcac6f0444462d4b5330/bf8d9ee9d43bdf4bf2a78ca4a19677d4.png",
+      "attributes": [
+        {
+          "trait_type": "Background",
+          "value": "Red Turquoise"
+        },
+        {
+          "trait_type": "Skin Tone",
+          "value": "Night Goddess"
+        },
+        {
+          "trait_type": "Eyes",
+          "value": "Blue Eye Roll"
+        },
+        {
+          "trait_type": "Facial Features",
+          "value": "Sunset"
+        },
+        {
+          "trait_type": "Hairstyle",
+          "value": "Bob"
+        },
+        {
+          "trait_type": "Clothes",
+          "value": "Tuxedo"
+        },
+        {
+          "trait_type": "Earrings",
+          "value": "Triple Rings"
+        },
+        {
+          "trait_type": "Mouth",
+          "value": "Surprised"
+        },
+        {
+          "trait_type": "Lips Color",
+          "value": "Passion Red"
+        }
+      ],
+      "tokenId": "5672",
+      "contractAddress": "0xe785E82358879F061BC3dcAC6f0444462D4b5330"
+    },
+    {
+      "name": "WoW #977",
+      "description": "",
+      "image": "https://i2.seadn.io/ethereum/0xe785e82358879f061bc3dcac6f0444462d4b5330/7e97f8bdaf9ee2f4de268741e22a9d14.png",
+      "imageOriginal": "https://i2.seadn.io/ethereum/0xe785e82358879f061bc3dcac6f0444462d4b5330/7e97f8bdaf9ee2f4de268741e22a9d14.png",
+      "attributes": [
+        {
+          "trait_type": "Background",
+          "value": "Orange Yellow"
+        },
+        {
+          "trait_type": "Skin Tone",
+          "value": "Night Goddess"
+        },
+        {
+          "trait_type": "Eyes",
+          "value": "Green To The Left"
+        },
+        {
+          "trait_type": "Facial Features",
+          "value": "Feline Eyes"
+        },
+        {
+          "trait_type": "Hairstyle",
+          "value": "Rose Hair"
+        },
+        {
+          "trait_type": "Face Accessories",
+          "value": "Hypnotic Glasses"
+        },
+        {
+          "trait_type": "Clothes",
+          "value": "Witch Dress"
+        },
+        {
+          "trait_type": "Earrings",
+          "value": "Pearls"
+        },
+        {
+          "trait_type": "Mouth",
+          "value": "Stern"
+        },
+        {
+          "trait_type": "Lips Color",
+          "value": "Burgundy"
+        }
+      ],
+      "tokenId": "977",
+      "contractAddress": "0xe785E82358879F061BC3dcAC6f0444462D4b5330"
+    },
+    {
+      "name": "WoW #2701",
+      "description": "",
+      "image": "https://i2.seadn.io/ethereum/0xe785e82358879f061bc3dcac6f0444462d4b5330/baa8d096d27b0fb5fe5487e6cd840318.png",
+      "imageOriginal": "https://i2.seadn.io/ethereum/0xe785e82358879f061bc3dcac6f0444462d4b5330/baa8d096d27b0fb5fe5487e6cd840318.png",
+      "attributes": [
+        {
+          "trait_type": "Background",
+          "value": "Dark Emerald"
+        },
+        {
+          "trait_type": "Skin Tone",
+          "value": "Night Goddess"
+        },
+        {
+          "trait_type": "Eyes",
+          "value": "Black To The Right"
+        },
+        {
+          "trait_type": "Facial Features",
+          "value": "Freckles"
+        },
+        {
+          "trait_type": "Hairstyle",
+          "value": "Lioness"
+        },
+        {
+          "trait_type": "Face Accessories",
+          "value": "Resting Butterfly"
+        },
+        {
+          "trait_type": "Necklace",
+          "value": "Back To The 90s"
+        },
+        {
+          "trait_type": "Clothes",
+          "value": "Painter's Overall"
+        },
+        {
+          "trait_type": "Earrings",
+          "value": "Lightning Bolts"
+        },
+        {
+          "trait_type": "Mouth",
+          "value": "Whistle"
+        },
+        {
+          "trait_type": "Lips Color",
+          "value": "Flashy Blue"
+        }
+      ],
+      "tokenId": "2701",
+      "contractAddress": "0xe785E82358879F061BC3dcAC6f0444462D4b5330"
+    }
+  ],
+  "fetchedAt": "2025-07-22T16:14:45.659Z"
+}

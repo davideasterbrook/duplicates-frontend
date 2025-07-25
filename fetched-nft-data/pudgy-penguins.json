@@ -1,0 +1,166 @@
+{
+  "name": "Pudgy Penguins",
+  "contractAddress": "0xBd3531dA5CF5857e7CfAA92426877b022e612cf8",
+  "slug": "pudgypenguins",
+  "tokens": [
+    "6873",
+    "3950",
+    "6570",
+    "5678",
+    "484"
+  ],
+  "folder": "pudgy-penguins",
+  "nfts": [
+    {
+      "name": "Pudgy Penguin #6873",
+      "description": "A collection 8888 Cute Chubby Pudgy Penquins sliding around on the freezing ETH blockchain.",
+      "image": "https://i2.seadn.io/ethereum/0xbd3531da5cf5857e7cfaa92426877b022e612cf8/025632e509585af6ab5a7a98693c18/c7025632e509585af6ab5a7a98693c18.png",
+      "imageOriginal": "https://i2.seadn.io/ethereum/0xbd3531da5cf5857e7cfaa92426877b022e612cf8/025632e509585af6ab5a7a98693c18/c7025632e509585af6ab5a7a98693c18.png",
+      "attributes": [
+        {
+          "trait_type": "Background",
+          "value": "Green"
+        },
+        {
+          "trait_type": "Skin",
+          "value": "Black"
+        },
+        {
+          "trait_type": "Body",
+          "value": "Mirrored"
+        },
+        {
+          "trait_type": "Face",
+          "value": "Mirrored"
+        },
+        {
+          "trait_type": "Head",
+          "value": "None"
+        }
+      ],
+      "tokenId": "6873",
+      "contractAddress": "0xBd3531dA5CF5857e7CfAA92426877b022e612cf8"
+    },
+    {
+      "name": "Pudgy Penguin #3950",
+      "description": "A collection 8888 Cute Chubby Pudgy Penquins sliding around on the freezing ETH blockchain.",
+      "image": "https://i2.seadn.io/ethereum/0xbd3531da5cf5857e7cfaa92426877b022e612cf8/f0d501cb75b56715e4f3e604765ebbe6.png",
+      "imageOriginal": "https://i2.seadn.io/ethereum/0xbd3531da5cf5857e7cfaa92426877b022e612cf8/f0d501cb75b56715e4f3e604765ebbe6.png",
+      "attributes": [
+        {
+          "trait_type": "Background",
+          "value": "On The Beach"
+        },
+        {
+          "trait_type": "Skin",
+          "value": "Navy Blue"
+        },
+        {
+          "trait_type": "Body",
+          "value": "Pineapple Suit"
+        },
+        {
+          "trait_type": "Face",
+          "value": "Normal"
+        },
+        {
+          "trait_type": "Head",
+          "value": "Pineapple Suit"
+        }
+      ],
+      "tokenId": "3950",
+      "contractAddress": "0xBd3531dA5CF5857e7CfAA92426877b022e612cf8"
+    },
+    {
+      "name": "Pudgy Penguin #6570",
+      "description": "A collection 8888 Cute Chubby Pudgy Penquins sliding around on the freezing ETH blockchain.",
+      "image": "https://i2.seadn.io/ethereum/0xbd3531da5cf5857e7cfaa92426877b022e612cf8/5aafaaaa83c8f3ae9053153acc9462c1.png",
+      "imageOriginal": "https://i2.seadn.io/ethereum/0xbd3531da5cf5857e7cfaa92426877b022e612cf8/5aafaaaa83c8f3ae9053153acc9462c1.png",
+      "attributes": [
+        {
+          "trait_type": "Background",
+          "value": "Blue"
+        },
+        {
+          "trait_type": "Skin",
+          "value": "Ice"
+        },
+        {
+          "trait_type": "Body",
+          "value": "Lei Blue"
+        },
+        {
+          "trait_type": "Face",
+          "value": "Handlebar Bear"
+        },
+        {
+          "trait_type": "Head",
+          "value": "Rice Hat"
+        }
+      ],
+      "tokenId": "6570",
+      "contractAddress": "0xBd3531dA5CF5857e7CfAA92426877b022e612cf8"
+    },
+    {
+      "name": "Pudgy Penguin #5678",
+      "description": "A collection 8888 Cute Chubby Pudgy Penquins sliding around on the freezing ETH blockchain.",
+      "image": "https://i2.seadn.io/ethereum/0xbd3531da5cf5857e7cfaa92426877b022e612cf8/93227c68cd24848bfcaa7db51860ec/fd93227c68cd24848bfcaa7db51860ec.png",
+      "imageOriginal": "https://i2.seadn.io/ethereum/0xbd3531da5cf5857e7cfaa92426877b022e612cf8/93227c68cd24848bfcaa7db51860ec/fd93227c68cd24848bfcaa7db51860ec.png",
+      "attributes": [
+        {
+          "trait_type": "Background",
+          "value": "Trick Or Treating"
+        },
+        {
+          "trait_type": "Skin",
+          "value": "Navy Blue"
+        },
+        {
+          "trait_type": "Body",
+          "value": "Pillow Case"
+        },
+        {
+          "trait_type": "Face",
+          "value": "Pillow Case"
+        },
+        {
+          "trait_type": "Head",
+          "value": "Normal"
+        }
+      ],
+      "tokenId": "5678",
+      "contractAddress": "0xBd3531dA5CF5857e7CfAA92426877b022e612cf8"
+    },
+    {
+      "name": "Pudgy Penguin #484",
+      "description": "A collection 8888 Cute Chubby Pudgy Penquins sliding around on the freezing ETH blockchain.",
+      "image": "https://i2.seadn.io/ethereum/0xbd3531da5cf5857e7cfaa92426877b022e612cf8/232e128c6964cbfa26f4fb08405d5911.png",
+      "imageOriginal": "https://i2.seadn.io/ethereum/0xbd3531da5cf5857e7cfaa92426877b022e612cf8/232e128c6964cbfa26f4fb08405d5911.png",
+      "attributes": [
+        {
+          "trait_type": "Background",
+          "value": "Tangerine"
+        },
+        {
+          "trait_type": "Skin",
+          "value": "Gold"
+        },
+        {
+          "trait_type": "Body",
+          "value": "Kimono Gold"
+        },
+        {
+          "trait_type": "Face",
+          "value": "Winking"
+        },
+        {
+          "trait_type": "Head",
+          "value": "Backwards Hat Red"
+        }
+      ],
+      "tokenId": "484",
+      "contractAddress": "0xBd3531dA5CF5857e7CfAA92426877b022e612cf8"
+    }
+  ],
+  "fetchedAt": "2025-07-22T16:13:59.489Z"
+}

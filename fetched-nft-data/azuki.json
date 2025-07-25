@@ -1,0 +1,230 @@
+{
+  "name": "Azuki",
+  "contractAddress": "0xED5AF388653567Af2F388E6224dC7C4b3241C544",
+  "slug": "azuki",
+  "tokens": [
+    "40",
+    "7301",
+    "9605",
+    "2174",
+    "4666"
+  ],
+  "folder": "azuki",
+  "nfts": [
+    {
+      "name": "Azuki #40",
+      "description": "",
+      "image": "https://i2.seadn.io/base/0x286ce4278213bf7b561763ebcf2342bb94e52858/93a24dfff5a514a785ffa6c85f0d875b.png",
+      "imageOriginal": "https://i2.seadn.io/base/0x286ce4278213bf7b561763ebcf2342bb94e52858/93a24dfff5a514a785ffa6c85f0d875b.png",
+      "attributes": [
+        {
+          "trait_type": "Type",
+          "value": "Human"
+        },
+        {
+          "trait_type": "Hair",
+          "value": "Brown Long"
+        },
+        {
+          "trait_type": "Special",
+          "value": "Fireflies"
+        },
+        {
+          "trait_type": "Clothing",
+          "value": "Straw Poncho"
+        },
+        {
+          "trait_type": "Eyes",
+          "value": "Tired"
+        },
+        {
+          "trait_type": "Mouth",
+          "value": "Long Stubble"
+        },
+        {
+          "trait_type": "Offhand",
+          "value": "Lantern"
+        },
+        {
+          "trait_type": "Background",
+          "value": "Cool Gray"
+        }
+      ],
+      "tokenId": "40",
+      "contractAddress": "0xED5AF388653567Af2F388E6224dC7C4b3241C544"
+    },
+    {
+      "name": "Azuki #7301",
+      "description": "",
+      "image": "https://i2.seadn.io/base/0x286ce4278213bf7b561763ebcf2342bb94e52858/c35960d71a36216a37ea80b83482133f.png",
+      "imageOriginal": "https://i2.seadn.io/base/0x286ce4278213bf7b561763ebcf2342bb94e52858/c35960d71a36216a37ea80b83482133f.png",
+      "attributes": [
+        {
+          "trait_type": "Type",
+          "value": "Spirit"
+        },
+        {
+          "trait_type": "Hair",
+          "value": "Spirit Ponytail"
+        },
+        {
+          "trait_type": "Special",
+          "value": "Fireflies"
+        },
+        {
+          "trait_type": "Clothing",
+          "value": "Black Ninja Top"
+        },
+        {
+          "trait_type": "Eyes",
+          "value": "Striking"
+        },
+        {
+          "trait_type": "Mouth",
+          "value": "Lipstick"
+        },
+        {
+          "trait_type": "Offhand",
+          "value": "Golden Boombox"
+        },
+        {
+          "trait_type": "Background",
+          "value": "Red"
+        }
+      ],
+      "tokenId": "7301",
+      "contractAddress": "0xED5AF388653567Af2F388E6224dC7C4b3241C544"
+    },
+    {
+      "name": "Azuki #9605",
+      "description": "",
+      "image": "https://i2.seadn.io/ethereum/0xed5af388653567af2f388e6224dc7c4b3241c544/f661377cb772f318ba53d52ff45c8921.png",
+      "imageOriginal": "https://i2.seadn.io/ethereum/0xed5af388653567af2f388e6224dc7c4b3241c544/f661377cb772f318ba53d52ff45c8921.png",
+      "attributes": [
+        {
+          "trait_type": "Background",
+          "value": "Cool Gray"
+        },
+        {
+          "trait_type": "Offhand",
+          "value": "Golden Shuriken"
+        },
+        {
+          "trait_type": "Mouth",
+          "value": "Pout"
+        },
+        {
+          "trait_type": "Type",
+          "value": "Spirit"
+        },
+        {
+          "trait_type": "Hair",
+          "value": "Spirit Fluffy"
+        },
+        {
+          "trait_type": "Eyes",
+          "value": "Chill"
+        },
+        {
+          "trait_type": "Special",
+          "value": "Fireflies"
+        },
+        {
+          "trait_type": "Ear",
+          "value": "Small Hoop"
+        },
+        {
+          "trait_type": "Neck",
+          "value": "Golden Headphones"
+        }
+      ],
+      "tokenId": "9605",
+      "contractAddress": "0xED5AF388653567Af2F388E6224dC7C4b3241C544"
+    },
+    {
+      "name": "Azuki #2174",
+      "description": "",
+      "image": "https://i2.seadn.io/base/0x286ce4278213bf7b561763ebcf2342bb94e52858/fb050837140fb53b6ed37c2d555ea423.png",
+      "imageOriginal": "https://i2.seadn.io/base/0x286ce4278213bf7b561763ebcf2342bb94e52858/fb050837140fb53b6ed37c2d555ea423.png",
+      "attributes": [
+        {
+          "trait_type": "Type",
+          "value": "Spirit"
+        },
+        {
+          "trait_type": "Hair",
+          "value": "Water"
+        },
+        {
+          "trait_type": "Special",
+          "value": "Water"
+        },
+        {
+          "trait_type": "Eyes",
+          "value": "Striking"
+        },
+        {
+          "trait_type": "Mouth",
+          "value": "Closed"
+        },
+        {
+          "trait_type": "Offhand",
+          "value": "Water Orb"
+        },
+        {
+          "trait_type": "Background",
+          "value": "Dark Blue"
+        }
+      ],
+      "tokenId": "2174",
+      "contractAddress": "0xED5AF388653567Af2F388E6224dC7C4b3241C544"
+    },
+    {
+      "name": "Azuki #4666",
+      "description": "",
+      "image": "https://i2.seadn.io/base/0x286ce4278213bf7b561763ebcf2342bb94e52858/f5a1b20ea19a528edc8531794d6602e8.png",
+      "imageOriginal": "https://i2.seadn.io/base/0x286ce4278213bf7b561763ebcf2342bb94e52858/f5a1b20ea19a528edc8531794d6602e8.png",
+      "attributes": [
+        {
+          "trait_type": "Type",
+          "value": "Spirit"
+        },
+        {
+          "trait_type": "Hair",
+          "value": "Spirit Ponytail"
+        },
+        {
+          "trait_type": "Special",
+          "value": "Fireflies"
+        },
+        {
+          "trait_type": "Neck",
+          "value": "Golden Headphones"
+        },
+        {
+          "trait_type": "Clothing",
+          "value": "White Qipao with Fur"
+        },
+        {
+          "trait_type": "Eyes",
+          "value": "Striking"
+        },
+        {
+          "trait_type": "Mouth",
+          "value": "Grin"
+        },
+        {
+          "trait_type": "Offhand",
+          "value": "Golden Umbrella"
+        },
+        {
+          "trait_type": "Background",
+          "value": "Dark Purple"
+        }
+      ],
+      "tokenId": "4666",
+      "contractAddress": "0xED5AF388653567Af2F388E6224dC7C4b3241C544"
+    }
+  ],
+  "fetchedAt": "2025-07-22T16:14:28.434Z"
+}

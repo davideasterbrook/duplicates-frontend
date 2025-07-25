@@ -1,0 +1,462 @@
+{
+  "name": "Otherdeeds for Otherside",
+  "contractAddress": "0x34d85c9CDeB23FA97cb08333b511ac86E1C4E258",
+  "slug": "otherdeeds-for-otherside",
+  "tokens": [
+    "1890",
+    "54421",
+    "55171",
+    "134",
+    "60401"
+  ],
+  "folder": "otherdeeds",
+  "nfts": [
+    {
+      "name": "",
+      "description": "",
+      "image": "https://i2.seadn.io/ethereum/0x34d85c9cdeb23fa97cb08333b511ac86e1c4e258/f708b52ff6e80c0c9cca456b9262a6/1ef708b52ff6e80c0c9cca456b9262a6.avif",
+      "imageOriginal": "https://i2.seadn.io/ethereum/0x34d85c9cdeb23fa97cb08333b511ac86e1c4e258/f708b52ff6e80c0c9cca456b9262a6/1ef708b52ff6e80c0c9cca456b9262a6.avif",
+      "attributes": [
+        {
+          "trait_type": "Category",
+          "value": "Mineral"
+        },
+        {
+          "trait_type": "Sediment Tier",
+          "value": "2"
+        },
+        {
+          "trait_type": "Southern Resource",
+          "value": "Luster"
+        },
+        {
+          "trait_type": "Southern Resource Tier",
+          "value": "2"
+        },
+        {
+          "trait_type": "Environment Tier",
+          "value": "4"
+        },
+        {
+          "trait_type": "Western Resource",
+          "value": "Whisper"
+        },
+        {
+          "trait_type": "Western Resource Tier",
+          "value": "3"
+        },
+        {
+          "trait_type": "Northern Resource Tier",
+          "value": "2"
+        },
+        {
+          "trait_type": "Environment",
+          "value": "Luster"
+        },
+        {
+          "trait_type": "Northern Resource",
+          "value": "Lumileaf"
+        },
+        {
+          "trait_type": "Sediment",
+          "value": "Biogenic Swamp"
+        },
+        {
+          "trait_type": "Plot",
+          "value": "1890"
+        },
+        {
+          "trait_type": "Koda",
+          "value": "9959"
+        },
+        {
+          "trait_type": "Koda ID",
+          "value": "9959"
+        },
+        {
+          "trait_type": "Artifact?",
+          "value": "No"
+        },
+        {
+          "trait_type": "Koda?",
+          "value": "Yes"
+        },
+        {
+          "trait_type": "Koda - Clothing?",
+          "value": "Yes"
+        },
+        {
+          "trait_type": "Koda - Weapon?",
+          "value": "Yes"
+        },
+        {
+          "trait_type": "Koda - Mega?",
+          "value": "Yes"
+        },
+        {
+          "trait_type": "Koda - Head",
+          "value": "Omni Lapis"
+        },
+        {
+          "trait_type": "Koda - Eyes",
+          "value": "Moon Pilot"
+        },
+        {
+          "trait_type": "Koda - Core",
+          "value": "Night Sky"
+        },
+        {
+          "trait_type": "Koda - Clothing",
+          "value": "Angelic"
+        },
+        {
+          "trait_type": "Koda - Weapon",
+          "value": "Wise Wand"
+        }
+      ],
+      "tokenId": "1890",
+      "contractAddress": "0x34d85c9CDeB23FA97cb08333b511ac86E1C4E258"
+    },
+    {
+      "name": "",
+      "description": "",
+      "image": "https://i2.seadn.io/ethereum/0x34d85c9cdeb23fa97cb08333b511ac86e1c4e258/f2009c78a392e5163778fbed9e7980/9ff2009c78a392e5163778fbed9e7980.avif",
+      "imageOriginal": "https://i2.seadn.io/ethereum/0x34d85c9cdeb23fa97cb08333b511ac86e1c4e258/f2009c78a392e5163778fbed9e7980/9ff2009c78a392e5163778fbed9e7980.avif",
+      "attributes": [
+        {
+          "trait_type": "Category",
+          "value": "Mineral"
+        },
+        {
+          "trait_type": "Northern Resource Tier",
+          "value": "1"
+        },
+        {
+          "trait_type": "Environment Tier",
+          "value": "2"
+        },
+        {
+          "trait_type": "Sediment",
+          "value": "Infinite Expanse"
+        },
+        {
+          "trait_type": "Sediment Tier",
+          "value": "1"
+        },
+        {
+          "trait_type": "Eastern Resource",
+          "value": "Brimstone"
+        },
+        {
+          "trait_type": "Environment",
+          "value": "Crystal"
+        },
+        {
+          "trait_type": "Eastern Resource Tier",
+          "value": "2"
+        },
+        {
+          "trait_type": "Northern Resource",
+          "value": "Lumileaf"
+        },
+        {
+          "trait_type": "Artifact",
+          "value": "Blade of Eternum"
+        },
+        {
+          "trait_type": "Plot",
+          "value": "54421"
+        },
+        {
+          "trait_type": "Koda?",
+          "value": "No"
+        },
+        {
+          "trait_type": "Artifact?",
+          "value": "Yes"
+        },
+        {
+          "trait_type": "Obelisk Piece",
+          "value": "First Trip"
+        }
+      ],
+      "tokenId": "54421",
+      "contractAddress": "0x34d85c9CDeB23FA97cb08333b511ac86E1C4E258"
+    },
+    {
+      "name": "",
+      "description": "",
+      "image": "https://i2.seadn.io/ethereum/0x34d85c9cdeb23fa97cb08333b511ac86e1c4e258/7cafd528895b9006654a2a34a9c21d/dd7cafd528895b9006654a2a34a9c21d.avif",
+      "imageOriginal": "https://i2.seadn.io/ethereum/0x34d85c9cdeb23fa97cb08333b511ac86e1c4e258/7cafd528895b9006654a2a34a9c21d/dd7cafd528895b9006654a2a34a9c21d.avif",
+      "attributes": [
+        {
+          "trait_type": "Western Resource Tier",
+          "value": "2"
+        },
+        {
+          "trait_type": "Sediment",
+          "value": "Infinite Expanse"
+        },
+        {
+          "trait_type": "Sediment Tier",
+          "value": "1"
+        },
+        {
+          "trait_type": "Environment Tier",
+          "value": "5"
+        },
+        {
+          "trait_type": "Eastern Resource Tier",
+          "value": "1"
+        },
+        {
+          "trait_type": "Category",
+          "value": "Volcanic"
+        },
+        {
+          "trait_type": "Environment",
+          "value": "Molten"
+        },
+        {
+          "trait_type": "Eastern Resource",
+          "value": "Petrified"
+        },
+        {
+          "trait_type": "Western Resource",
+          "value": "Moldium"
+        },
+        {
+          "trait_type": "Plot",
+          "value": "55171"
+        },
+        {
+          "trait_type": "Koda",
+          "value": "9956"
+        },
+        {
+          "trait_type": "Koda ID",
+          "value": "9956"
+        },
+        {
+          "trait_type": "Artifact?",
+          "value": "No"
+        },
+        {
+          "trait_type": "Koda?",
+          "value": "Yes"
+        },
+        {
+          "trait_type": "Koda - Clothing?",
+          "value": "Yes"
+        },
+        {
+          "trait_type": "Koda - Weapon?",
+          "value": "Yes"
+        },
+        {
+          "trait_type": "Koda - Mega?",
+          "value": "Yes"
+        },
+        {
+          "trait_type": "Koda - Weapon",
+          "value": "Brigids Fury"
+        },
+        {
+          "trait_type": "Koda - Clothing",
+          "value": "Furnace Armor"
+        },
+        {
+          "trait_type": "Koda - Eyes",
+          "value": "Burn On Sight"
+        },
+        {
+          "trait_type": "Koda - Head",
+          "value": "Cinderflow"
+        },
+        {
+          "trait_type": "Koda - Core",
+          "value": "Glowing Embers"
+        }
+      ],
+      "tokenId": "55171",
+      "contractAddress": "0x34d85c9CDeB23FA97cb08333b511ac86E1C4E258"
+    },
+    {
+      "name": "",
+      "description": "",
+      "image": "https://i2.seadn.io/ethereum/0x34d85c9cdeb23fa97cb08333b511ac86e1c4e258/0ce71025d5b967f1fd89ddebd99262/b90ce71025d5b967f1fd89ddebd99262.avif",
+      "imageOriginal": "https://i2.seadn.io/ethereum/0x34d85c9cdeb23fa97cb08333b511ac86e1c4e258/0ce71025d5b967f1fd89ddebd99262/b90ce71025d5b967f1fd89ddebd99262.avif",
+      "attributes": [
+        {
+          "trait_type": "Environment Tier",
+          "value": "1"
+        },
+        {
+          "trait_type": "Sediment Tier",
+          "value": "1"
+        },
+        {
+          "trait_type": "Eastern Resource Tier",
+          "value": "1"
+        },
+        {
+          "trait_type": "Western Resource Tier",
+          "value": "3"
+        },
+        {
+          "trait_type": "Category",
+          "value": "Growth"
+        },
+        {
+          "trait_type": "Eastern Resource",
+          "value": "Luster"
+        },
+        {
+          "trait_type": "Sediment",
+          "value": "Biogenic Swamp"
+        },
+        {
+          "trait_type": "Western Resource",
+          "value": "Moldium"
+        },
+        {
+          "trait_type": "Artifact",
+          "value": "Sticky Cauldron"
+        },
+        {
+          "trait_type": "Environment",
+          "value": "Mycelium"
+        },
+        {
+          "trait_type": "Plot",
+          "value": "134"
+        },
+        {
+          "trait_type": "Koda",
+          "value": "9934"
+        },
+        {
+          "trait_type": "Koda ID",
+          "value": "9934"
+        },
+        {
+          "trait_type": "Artifact?",
+          "value": "Yes"
+        },
+        {
+          "trait_type": "Koda?",
+          "value": "Yes"
+        },
+        {
+          "trait_type": "Koda - Clothing?",
+          "value": "Yes"
+        },
+        {
+          "trait_type": "Koda - Weapon?",
+          "value": "Yes"
+        },
+        {
+          "trait_type": "Koda - Eyes",
+          "value": "Green Glance"
+        },
+        {
+          "trait_type": "Koda - Clothing",
+          "value": "Undergrowth Robe"
+        },
+        {
+          "trait_type": "Koda - Mega?",
+          "value": "Yes"
+        },
+        {
+          "trait_type": "Koda - Weapon",
+          "value": "Mush Clobberer"
+        },
+        {
+          "trait_type": "Koda - Head",
+          "value": "Archshroom"
+        },
+        {
+          "trait_type": "Koda - Core",
+          "value": "Polypore"
+        }
+      ],
+      "tokenId": "134",
+      "contractAddress": "0x34d85c9CDeB23FA97cb08333b511ac86E1C4E258"
+    },
+    {
+      "name": "",
+      "description": "",
+      "image": "https://i2.seadn.io/ethereum/0x34d85c9cdeb23fa97cb08333b511ac86e1c4e258/ea8a43cb0ca1fff8e39748d3f80000/60ea8a43cb0ca1fff8e39748d3f80000.avif",
+      "imageOriginal": "https://i2.seadn.io/ethereum/0x34d85c9cdeb23fa97cb08333b511ac86e1c4e258/ea8a43cb0ca1fff8e39748d3f80000/60ea8a43cb0ca1fff8e39748d3f80000.avif",
+      "attributes": [
+        {
+          "trait_type": "Western Resource Tier",
+          "value": "2"
+        },
+        {
+          "trait_type": "Northern Resource Tier",
+          "value": "1"
+        },
+        {
+          "trait_type": "Sediment",
+          "value": "Infinite Expanse"
+        },
+        {
+          "trait_type": "Sediment Tier",
+          "value": "1"
+        },
+        {
+          "trait_type": "Southern Resource Tier",
+          "value": "1"
+        },
+        {
+          "trait_type": "Environment Tier",
+          "value": "5"
+        },
+        {
+          "trait_type": "Eastern Resource Tier",
+          "value": "1"
+        },
+        {
+          "trait_type": "Category",
+          "value": "Chaos"
+        },
+        {
+          "trait_type": "Environment",
+          "value": "Chaos"
+        },
+        {
+          "trait_type": "Western Resource",
+          "value": "Omni"
+        },
+        {
+          "trait_type": "Northern Resource",
+          "value": "Void"
+        },
+        {
+          "trait_type": "Southern Resource",
+          "value": "Degradia"
+        },
+        {
+          "trait_type": "Eastern Resource",
+          "value": "Degradia"
+        },
+        {
+          "trait_type": "Plot",
+          "value": "60401"
+        },
+        {
+          "trait_type": "Koda?",
+          "value": "No"
+        },
+        {
+          "trait_type": "Artifact?",
+          "value": "No"
+        }
+      ],
+      "tokenId": "60401",
+      "contractAddress": "0x34d85c9CDeB23FA97cb08333b511ac86E1C4E258"
+    }
+  ],
+  "fetchedAt": "2025-07-22T16:14:39.949Z"
+}

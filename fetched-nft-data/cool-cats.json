@@ -1,0 +1,166 @@
+{
+  "name": "Cool Cats",
+  "contractAddress": "0x1a92f7381b9f03921564a437210bb9396471050c",
+  "slug": "cool-cats-nft",
+  "tokens": [
+    "500",
+    "6972",
+    "1490",
+    "4695",
+    "2288"
+  ],
+  "folder": "cool-cats",
+  "nfts": [
+    {
+      "name": "Cool Cat #500",
+      "description": "WOW!!!! You just found one of the 9 hidden cats. These are insanely rare. Clon and Xtremetom created them without telling the rest of the team. Please drop by our discord to let us know you found it. [https://discord.com/invite/X6A4AXrKaR](https://discord.com/invite/X6A4AXrKaR).",
+      "image": "https://i2.seadn.io/ethereum/0x1a92f7381b9f03921564a437210bb9396471050c/739a087041daa2717dae788950d8c37a.png",
+      "imageOriginal": "https://i2.seadn.io/ethereum/0x1a92f7381b9f03921564a437210bb9396471050c/739a087041daa2717dae788950d8c37a.png",
+      "attributes": [
+        {
+          "trait_type": "body",
+          "value": "blue cat skin"
+        },
+        {
+          "trait_type": "hats",
+          "value": "upsidedown"
+        },
+        {
+          "trait_type": "shirt",
+          "value": "upsidedown"
+        },
+        {
+          "trait_type": "face",
+          "value": "upsidedown"
+        },
+        {
+          "trait_type": "tier",
+          "value": "exotic_2"
+        }
+      ],
+      "tokenId": "500",
+      "contractAddress": "0x1a92f7381b9f03921564a437210bb9396471050c"
+    },
+    {
+      "name": "Cool Cat #6972",
+      "description": "WOW!!!! You just found one of the 9 hidden cats. These are insanely rare. Clon and Xtremetom created them without telling the rest of the team. Please drop by our discord to let us know you found it. [https://discord.com/invite/X6A4AXrKaR](https://discord.com/invite/X6A4AXrKaR).",
+      "image": "https://i2.seadn.io/ethereum/0x1a92f7381b9f03921564a437210bb9396471050c/7956f6ae0371335b0dfcf5fca5ced20c.png",
+      "imageOriginal": "https://i2.seadn.io/ethereum/0x1a92f7381b9f03921564a437210bb9396471050c/7956f6ae0371335b0dfcf5fca5ced20c.png",
+      "attributes": [
+        {
+          "trait_type": "body",
+          "value": "blue cat skin"
+        },
+        {
+          "trait_type": "hats",
+          "value": "celestial"
+        },
+        {
+          "trait_type": "shirt",
+          "value": "celestial"
+        },
+        {
+          "trait_type": "face",
+          "value": "celestial"
+        },
+        {
+          "trait_type": "tier",
+          "value": "exotic_2"
+        }
+      ],
+      "tokenId": "6972",
+      "contractAddress": "0x1a92f7381b9f03921564a437210bb9396471050c"
+    },
+    {
+      "name": "Cool Cat #1490",
+      "description": "WOW!!!! You just found one of the 9 hidden cats. These are insanely rare. Clon and Xtremetom created them without telling the rest of the team. Please drop by our discord to let us know you found it. [https://discord.com/invite/X6A4AXrKaR](https://discord.com/invite/X6A4AXrKaR).",
+      "image": "https://i2.seadn.io/ethereum/0x1a92f7381b9f03921564a437210bb9396471050c/a6de476f0b822a8c612b702dcc137d62.png",
+      "imageOriginal": "https://i2.seadn.io/ethereum/0x1a92f7381b9f03921564a437210bb9396471050c/a6de476f0b822a8c612b702dcc137d62.png",
+      "attributes": [
+        {
+          "trait_type": "body",
+          "value": "blue cat skin"
+        },
+        {
+          "trait_type": "hats",
+          "value": "special zombie"
+        },
+        {
+          "trait_type": "shirt",
+          "value": "special zombie"
+        },
+        {
+          "trait_type": "face",
+          "value": "special zombie"
+        },
+        {
+          "trait_type": "tier",
+          "value": "exotic_2"
+        }
+      ],
+      "tokenId": "1490",
+      "contractAddress": "0x1a92f7381b9f03921564a437210bb9396471050c"
+    },
+    {
+      "name": "Cool Cat #4695",
+      "description": "WOW!!!! You just found one of the 9 hidden cats. These are insanely rare. Clon and Xtremetom created them without telling the rest of the team. Please drop by our discord to let us know you found it. [https://discord.com/invite/X6A4AXrKaR](https://discord.com/invite/X6A4AXrKaR).",
+      "image": "https://i2.seadn.io/ethereum/0x1a92f7381b9f03921564a437210bb9396471050c/8df86f8aa2305346af2a21b41d8254a3.png",
+      "imageOriginal": "https://i2.seadn.io/ethereum/0x1a92f7381b9f03921564a437210bb9396471050c/8df86f8aa2305346af2a21b41d8254a3.png",
+      "attributes": [
+        {
+          "trait_type": "body",
+          "value": "blue cat skin"
+        },
+        {
+          "trait_type": "hats",
+          "value": "lucky"
+        },
+        {
+          "trait_type": "shirt",
+          "value": "lucky"
+        },
+        {
+          "trait_type": "face",
+          "value": "lucky"
+        },
+        {
+          "trait_type": "tier",
+          "value": "exotic_2"
+        }
+      ],
+      "tokenId": "4695",
+      "contractAddress": "0x1a92f7381b9f03921564a437210bb9396471050c"
+    },
+    {
+      "name": "Cool Cat #2288",
+      "description": "WOW!!!! You just found one of the 9 hidden cats. These are insanely rare. Clon and Xtremetom created them without telling the rest of the team. Please drop by our discord to let us know you found it. [https://discord.com/invite/X6A4AXrKaR](https://discord.com/invite/X6A4AXrKaR).",
+      "image": "https://i2.seadn.io/ethereum/0x1a92f7381b9f03921564a437210bb9396471050c/1d9721b814d3ed703aaa9b417a9389ab.png",
+      "imageOriginal": "https://i2.seadn.io/ethereum/0x1a92f7381b9f03921564a437210bb9396471050c/1d9721b814d3ed703aaa9b417a9389ab.png",
+      "attributes": [
+        {
+          "trait_type": "body",
+          "value": "blue cat skin"
+        },
+        {
+          "trait_type": "hats",
+          "value": "skeleton"
+        },
+        {
+          "trait_type": "shirt",
+          "value": "skeleton"
+        },
+        {
+          "trait_type": "face",
+          "value": "skeleton"
+        },
+        {
+          "trait_type": "tier",
+          "value": "exotic_2"
+        }
+      ],
+      "tokenId": "2288",
+      "contractAddress": "0x1a92f7381b9f03921564a437210bb9396471050c"
+    }
+  ],
+  "fetchedAt": "2025-07-22T16:14:22.661Z"
+}

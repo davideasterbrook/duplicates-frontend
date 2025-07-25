@@ -1,0 +1,17 @@
+<svg width="400" height="400" viewBox="0 0 400 400" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <linearGradient id="grad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#2D1B69;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#190755;stop-opacity:1" />
+    </linearGradient>
+  </defs>
+  <rect width="400" height="400" fill="url(#grad)"/>
+  <rect x="50" y="50" width="300" height="300" rx="20" fill="rgba(255,255,255,0.1)" stroke="rgba(255,255,255,0.3)" stroke-width="2"/>
+  <circle cx="200" cy="180" r="60" fill="rgba(255,255,255,0.2)"/>
+  <circle cx="175" cy="160" r="8" fill="rgba(255,255,255,0.8)"/>
+  <circle cx="225" cy="160" r="8" fill="rgba(255,255,255,0.8)"/>
+  <path d="M 175 200 Q 200 220 225 200" stroke="rgba(255,255,255,0.8)" stroke-width="3" fill="none"/>
+  <text x="200" y="280" text-anchor="middle" fill="rgba(255,255,255,0.9)" font-family="Arial, sans-serif" font-size="18" font-weight="bold">BAYC #5809</text>
+  <text x="200" y="310" text-anchor="middle" fill="rgba(255,255,255,0.7)" font-family="Arial, sans-serif" font-size="12">Placeholder Image</text>
+  <text x="200" y="330" text-anchor="middle" fill="rgba(255,255,255,0.5)" font-family="Arial, sans-serif" font-size="10">Replace with real NFT image</text>
+</svg>

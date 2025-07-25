@@ -1,0 +1,138 @@
+{
+  "name": "Moonbirds",
+  "contractAddress": "0x23581767a106ae21c074b2276D25e5C3e136a68b",
+  "slug": "proof-moonbirds",
+  "tokens": [
+    "1",
+    "2642",
+    "668",
+    "4835",
+    "5079"
+  ],
+  "folder": "moonbirds",
+  "nfts": [
+    {
+      "name": "Moonbirds #1",
+      "description": "",
+      "image": "https://i2.seadn.io/ethereum/0x23581767a106ae21c074b2276d25e5c3e136a68b/8abd4db8278407d89954cf718d163e/ff8abd4db8278407d89954cf718d163e.png",
+      "imageOriginal": "https://i2.seadn.io/ethereum/0x23581767a106ae21c074b2276d25e5c3e136a68b/8abd4db8278407d89954cf718d163e/ff8abd4db8278407d89954cf718d163e.png",
+      "attributes": [
+        {
+          "trait_type": "Background",
+          "value": "Pink"
+        },
+        {
+          "trait_type": "Beak",
+          "value": "Short"
+        },
+        {
+          "trait_type": "Body",
+          "value": "Tabby"
+        },
+        {
+          "trait_type": "Feathers",
+          "value": "Red"
+        },
+        {
+          "trait_type": "Eyes",
+          "value": "Rainbow"
+        },
+        {
+          "trait_type": "Outerwear",
+          "value": "Jean Jacket"
+        }
+      ],
+      "tokenId": "1",
+      "contractAddress": "0x23581767a106ae21c074b2276D25e5C3e136a68b"
+    },
+    {
+      "name": "Moonbirds #2642",
+      "description": "",
+      "image": "https://i2.seadn.io/ethereum/0x23581767a106ae21c074b2276d25e5c3e136a68b/38bfc521ad4d66ab273a34326f326c/4938bfc521ad4d66ab273a34326f326c.png",
+      "imageOriginal": "https://i2.seadn.io/ethereum/0x23581767a106ae21c074b2276d25e5c3e136a68b/38bfc521ad4d66ab273a34326f326c/4938bfc521ad4d66ab273a34326f326c.png",
+      "attributes": [
+        {
+          "trait_type": "Background",
+          "value": "Jade Green"
+        },
+        {
+          "trait_type": "Body",
+          "value": "Jade"
+        },
+        {
+          "trait_type": "Feathers",
+          "value": "Legendary Sage"
+        }
+      ],
+      "tokenId": "2642",
+      "contractAddress": "0x23581767a106ae21c074b2276D25e5C3e136a68b"
+    },
+    {
+      "name": "Moonbirds #668",
+      "description": "",
+      "image": "https://i2.seadn.io/ethereum/0x23581767a106ae21c074b2276d25e5c3e136a68b/44c843c0aa3246ea67d636792b2067/b544c843c0aa3246ea67d636792b2067.png",
+      "imageOriginal": "https://i2.seadn.io/ethereum/0x23581767a106ae21c074b2276d25e5c3e136a68b/44c843c0aa3246ea67d636792b2067/b544c843c0aa3246ea67d636792b2067.png",
+      "attributes": [
+        {
+          "trait_type": "Background",
+          "value": "Glitch Red"
+        },
+        {
+          "trait_type": "Body",
+          "value": "Glitch"
+        },
+        {
+          "trait_type": "Feathers",
+          "value": "Legendary Guardian"
+        }
+      ],
+      "tokenId": "668",
+      "contractAddress": "0x23581767a106ae21c074b2276D25e5C3e136a68b"
+    },
+    {
+      "name": "Moonbirds #4835",
+      "description": "",
+      "image": "https://i2.seadn.io/ethereum/0x23581767a106ae21c074b2276d25e5c3e136a68b/ba37cc241f952b39574c3cc807391496.bmp",
+      "imageOriginal": "https://i2.seadn.io/ethereum/0x23581767a106ae21c074b2276d25e5c3e136a68b/ba37cc241f952b39574c3cc807391496.bmp",
+      "attributes": [
+        {
+          "trait_type": "Feathers",
+          "value": "Legendary Guardian"
+        },
+        {
+          "trait_type": "Background",
+          "value": "Cosmic Purple"
+        },
+        {
+          "trait_type": "Body",
+          "value": "Cosmic"
+        }
+      ],
+      "tokenId": "4835",
+      "contractAddress": "0x23581767a106ae21c074b2276D25e5C3e136a68b"
+    },
+    {
+      "name": "Moonbirds #5079",
+      "description": "",
+      "image": "https://i2.seadn.io/ethereum/0x23581767a106ae21c074b2276d25e5c3e136a68b/19ade64bb82a087e9efef0a649f02d/fc19ade64bb82a087e9efef0a649f02d.png",
+      "imageOriginal": "https://i2.seadn.io/ethereum/0x23581767a106ae21c074b2276d25e5c3e136a68b/19ade64bb82a087e9efef0a649f02d/fc19ade64bb82a087e9efef0a649f02d.png",
+      "attributes": [
+        {
+          "trait_type": "Background",
+          "value": "Jade Green"
+        },
+        {
+          "trait_type": "Body",
+          "value": "Jade"
+        },
+        {
+          "trait_type": "Feathers",
+          "value": "Legendary Guardian"
+        }
+      ],
+      "tokenId": "5079",
+      "contractAddress": "0x23581767a106ae21c074b2276D25e5C3e136a68b"
+    }
+  ],
+  "fetchedAt": "2025-07-20T14:34:22.281Z"
+}

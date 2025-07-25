@@ -1,0 +1,78 @@
+{
+  "downloadedAt": "2025-07-22T16:17:39.418Z",
+  "totalCollections": 10,
+  "totalSuccess": 50,
+  "totalFailed": 0,
+  "collections": [
+    {
+      "name": "Bored Ape Yacht Club",
+      "folder": "bayc",
+      "successCount": 5,
+      "failCount": 0,
+      "successRate": "100.0%"
+    },
+    {
+      "name": "Pudgy Penguins",
+      "folder": "pudgy-penguins",
+      "successCount": 5,
+      "failCount": 0,
+      "successRate": "100.0%"
+    },
+    {
+      "name": "Doodles",
+      "folder": "doodles",
+      "successCount": 5,
+      "failCount": 0,
+      "successRate": "100.0%"
+    },
+    {
+      "name": "LilPudgys",
+      "folder": "lilpudgys",
+      "successCount": 5,
+      "failCount": 0,
+      "successRate": "100.0%"
+    },
+    {
+      "name": "Opepen Edition",
+      "folder": "opepen-edition",
+      "successCount": 5,
+      "failCount": 0,
+      "successRate": "100.0%"
+    },
+    {
+      "name": "Cool Cats",
+      "folder": "cool-cats",
+      "successCount": 5,
+      "failCount": 0,
+      "successRate": "100.0%"
+    },
+    {
+      "name": "Azuki",
+      "folder": "azuki",
+      "successCount": 5,
+      "failCount": 0,
+      "successRate": "100.0%"
+    },
+    {
+      "name": "CloneX",
+      "folder": "clonex",
+      "successCount": 5,
+      "failCount": 0,
+      "successRate": "100.0%"
+    },
+    {
+      "name": "Otherdeeds for Otherside",
+      "folder": "otherdeeds",
+      "successCount": 5,
+      "failCount": 0,
+      "successRate": "100.0%"
+    },
+    {
+      "name": "World of Women",
+      "folder": "world-of-women",
+      "successCount": 5,
+      "failCount": 0,
+      "successRate": "100.0%"
+    }
+  ]
+}

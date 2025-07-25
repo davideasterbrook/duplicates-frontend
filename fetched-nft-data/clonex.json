@@ -1,0 +1,190 @@
+{
+  "name": "CloneX",
+  "contractAddress": "0x49cF6f5d44E70224e2E23fDcdd2C053F30aDA28B",
+  "slug": "clonex",
+  "tokens": [
+    "18276",
+    "16775",
+    "1",
+    "17036",
+    "3"
+  ],
+  "folder": "clonex",
+  "nfts": [
+    {
+      "name": "CloneX #9996",
+      "description": "🧬 CLONE X 🧬\n\n20,000 next-gen Avatars, by RTFKT and Takashi Murakami 🌸\n\nIf you own a clone without any Murakami trait please read the terms regarding RTFKT - Owned Content here: https://rtfkt.com/legal-2A\n\nYou are also entitled to a commercial license, please read the terms to that here: https://rtfkt.com/legal-2C",
+      "image": "https://i2.seadn.io/ethereum/0x49cf6f5d44e70224e2e23fdcdd2c053f30ada28b/d789f9f1aacfa424ced2f4662e2131/6ad789f9f1aacfa424ced2f4662e2131.png",
+      "imageOriginal": "https://i2.seadn.io/ethereum/0x49cf6f5d44e70224e2e23fdcdd2c053f30ada28b/d789f9f1aacfa424ced2f4662e2131/6ad789f9f1aacfa424ced2f4662e2131.png",
+      "attributes": [
+        {
+          "trait_type": "DNA",
+          "value": "Robot"
+        },
+        {
+          "trait_type": "Hair",
+          "value": "GRN DRDZ"
+        },
+        {
+          "trait_type": "Clothing",
+          "value": "JS Tee"
+        },
+        {
+          "trait_type": "Mouth",
+          "value": "WZRD"
+        },
+        {
+          "trait_type": "Type",
+          "value": "MK1"
+        }
+      ],
+      "tokenId": "18276",
+      "contractAddress": "0x49cF6f5d44E70224e2E23fDcdd2C053F30aDA28B"
+    },
+    {
+      "name": "CloneX #10003",
+      "description": "🧬 CLONE X 🧬\n\n20,000 next-gen Avatars, by RTFKT and Takashi Murakami 🌸\n\nIf you own a clone without any Murakami trait please read the terms regarding RTFKT - Owned Content here: https://rtfkt.com/legal-2A\n\nYou are also entitled to a commercial license, please read the terms to that here: https://rtfkt.com/legal-2C",
+      "image": "https://i2.seadn.io/ethereum/0x49cf6f5d44e70224e2e23fdcdd2c053f30ada28b/0568f5f3aaebd0c8924a172599d17a/000568f5f3aaebd0c8924a172599d17a.png",
+      "imageOriginal": "https://i2.seadn.io/ethereum/0x49cf6f5d44e70224e2e23fdcdd2c053f30ada28b/0568f5f3aaebd0c8924a172599d17a/000568f5f3aaebd0c8924a172599d17a.png",
+      "attributes": [
+        {
+          "trait_type": "DNA",
+          "value": "Robot"
+        },
+        {
+          "trait_type": "Hair",
+          "value": "BLU Long"
+        },
+        {
+          "trait_type": "Jewelry",
+          "value": "CYN Two Piece"
+        },
+        {
+          "trait_type": "Clothing",
+          "value": "GM MONO HOODIE"
+        },
+        {
+          "trait_type": "Eyewear",
+          "value": "ZK VR"
+        }
+      ],
+      "tokenId": "16775",
+      "contractAddress": "0x49cF6f5d44E70224e2E23fDcdd2C053F30aDA28B"
+    },
+    {
+      "name": "CloneX #1",
+      "description": "🧬 CLONE X 🧬\n\n20,000 next-gen Avatars, by RTFKT and Takashi Murakami 🌸\n\nIf you own a clone with even one Murakami trait please read the terms regarding third-party content here: https://rtfkt.com/legal-2B.\n\nYou are not entitled to a commercial license if you own an avatar with any traits created by Murakami.",
+      "image": "https://i2.seadn.io/ethereum/0x49cf6f5d44e70224e2e23fdcdd2c053f30ada28b/48edfe0111f0c3a8aa66bc5c05c8b8/ba48edfe0111f0c3a8aa66bc5c05c8b8.png",
+      "imageOriginal": "https://i2.seadn.io/ethereum/0x49cf6f5d44e70224e2e23fdcdd2c053f30ada28b/48edfe0111f0c3a8aa66bc5c05c8b8/ba48edfe0111f0c3a8aa66bc5c05c8b8.png",
+      "attributes": [
+        {
+          "trait_type": "DNA",
+          "value": "Human"
+        },
+        {
+          "trait_type": "Eye Color",
+          "value": "BLU-PURP"
+        },
+        {
+          "trait_type": "Eye Color",
+          "value": "BLU"
+        },
+        {
+          "trait_type": "Clothing",
+          "value": "JELLYFISH BLW UP JCKT"
+        },
+        {
+          "trait_type": "Jewelry",
+          "value": "GLD Iced Cuban"
+        },
+        {
+          "trait_type": "Type",
+          "value": "ARTIST EDITION"
+        },
+        {
+          "trait_type": "Type",
+          "value": "SPLIT"
+        },
+        {
+          "trait_type": "Type",
+          "value": "MURAKAMI DRIP"
+        }
+      ],
+      "tokenId": "1",
+      "contractAddress": "0x49cF6f5d44E70224e2E23fDcdd2C053F30aDA28B"
+    },
+    {
+      "name": "CloneX #19950",
+      "description": "🧬 CLONE X 🧬\n\n20,000 next-gen Avatars, by RTFKT and Takashi Murakami 🌸\n\nIf you own a clone without any Murakami trait please read the terms regarding RTFKT - Owned Content here: https://rtfkt.com/legal-2A\n\nYou are also entitled to a commercial license, please read the terms to that here: https://rtfkt.com/legal-2C",
+      "image": "https://i2.seadn.io/ethereum/0x49cf6f5d44e70224e2e23fdcdd2c053f30ada28b/0b62ea26ff06985a35bbd666d18bff/3d0b62ea26ff06985a35bbd666d18bff.png",
+      "imageOriginal": "https://i2.seadn.io/ethereum/0x49cf6f5d44e70224e2e23fdcdd2c053f30ada28b/0b62ea26ff06985a35bbd666d18bff/3d0b62ea26ff06985a35bbd666d18bff.png",
+      "attributes": [
+        {
+          "trait_type": "DNA",
+          "value": "Human"
+        },
+        {
+          "trait_type": "Eye Color",
+          "value": "BRWN"
+        },
+        {
+          "trait_type": "Hair",
+          "value": "BLCK Curtains"
+        },
+        {
+          "trait_type": "Jewelry",
+          "value": "S-HIRE G-Link"
+        },
+        {
+          "trait_type": "Clothing",
+          "value": "WHT BKR JCKT"
+        }
+      ],
+      "tokenId": "17036",
+      "contractAddress": "0x49cF6f5d44E70224e2E23fDcdd2C053F30aDA28B"
+    },
+    {
+      "name": "CloneX #3",
+      "description": "🧬 CLONE X 🧬\n\n20,000 next-gen Avatars, by RTFKT and Takashi Murakami 🌸\n\nIf you own a clone with even one Murakami trait please read the terms regarding third-party content here: https://rtfkt.com/legal-2B.\n\nYou are not entitled to a commercial license if you own an avatar with any traits created by Murakami.",
+      "image": "https://i2.seadn.io/ethereum/0x49cf6f5d44e70224e2e23fdcdd2c053f30ada28b/da202440c44aa3444ab6809663fcc6/c1da202440c44aa3444ab6809663fcc6.png",
+      "imageOriginal": "https://i2.seadn.io/ethereum/0x49cf6f5d44e70224e2e23fdcdd2c053f30ada28b/da202440c44aa3444ab6809663fcc6/c1da202440c44aa3444ab6809663fcc6.png",
+      "attributes": [
+        {
+          "trait_type": "DNA",
+          "value": "Murakami"
+        },
+        {
+          "trait_type": "Eye Color",
+          "value": "RNBW"
+        },
+        {
+          "trait_type": "Clothing",
+          "value": "RTFKT x TM RNBW FLOWER PFA"
+        },
+        {
+          "trait_type": "Hair",
+          "value": "PURP KO2 Tiara"
+        },
+        {
+          "trait_type": "Mouth",
+          "value": "Tan Tan Bo"
+        },
+        {
+          "trait_type": "Back",
+          "value": "GRN UNDRWRLD WINGZ"
+        },
+        {
+          "trait_type": "Type",
+          "value": "ARTIST EDITION"
+        },
+        {
+          "trait_type": "Type",
+          "value": "MURAKAMI DRIP"
+        }
+      ],
+      "tokenId": "3",
+      "contractAddress": "0x49cF6f5d44E70224e2E23fDcdd2C053F30aDA28B"
+    }
+  ],
+  "fetchedAt": "2025-07-22T16:14:34.159Z"
+}

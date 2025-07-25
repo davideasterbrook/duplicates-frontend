@@ -1,0 +1,87 @@
+@import "tailwindcss";
+
+:root {
+  --background: #ffffff;
+  --foreground: #171717;
+}
+
+@theme inline {
+  --color-background: var(--background);
+  --color-foreground: var(--foreground);
+  --font-sans: var(--font-geist-sans);
+  --font-mono: var(--font-geist-mono);
+}
+
+@media (prefers-color-scheme: dark) {
+  :root {
+    --background: #0a0a0a;
+    --foreground: #ededed;
+  }
+}
+
+body {
+  background: var(--background);
+  color: var(--foreground);
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+/* Custom RainbowKit wallet theming to match site */
+:root {
+  --rk-colors-accentColor: #a855f7;
+  --rk-colors-accentColorForeground: #ffffff;
+  --rk-colors-modalBackground: rgba(17, 24, 39, 0.95);
+  --rk-colors-modalBorder: rgba(156, 163, 175, 0.3);
+  --rk-colors-modalText: #ffffff;
+  --rk-colors-modalTextDim: #9ca3af;
+  --rk-colors-modalTextSecondary: #d1d5db;
+  --rk-colors-connectButtonBackground: linear-gradient(135deg, #6366f1 0%, #a855f7 50%, #ec4899 100%);
+  --rk-colors-connectButtonText: #ffffff;
+  --rk-colors-actionButtonBorder: rgba(168, 85, 247, 0.3);
+  --rk-colors-closeButton: #9ca3af;
+  --rk-colors-closeButtonBackground: rgba(17, 24, 39, 0.8);
+  --rk-colors-generalBorder: rgba(156, 163, 175, 0.3);
+  --rk-colors-menuItemBackground: rgba(31, 41, 55, 0.8);
+  --rk-colors-profileAction: rgba(31, 41, 55, 0.8);
+  --rk-colors-profileActionHover: rgba(55, 65, 81, 0.8);
+  --rk-colors-profileForeground: rgba(17, 24, 39, 0.95);
+  --rk-colors-selectedOptionBorder: #a855f7;
+  --rk-radii-connectButton: 12px;
+  --rk-radii-modal: 16px;
+  --rk-radii-actionButton: 12px;
+  --rk-shadows-connectButton: 0 10px 25px -3px rgba(168, 85, 247, 0.25), 0 4px 6px -2px rgba(168, 85, 247, 0.1);
+  --rk-shadows-dialog: 0 25px 50px -12px rgba(0, 0, 0, 0.25);
+  --rk-shadows-selectedWallet: 0 0 0 2px rgba(168, 85, 247, 0.5);
+}
+
+/* Additional styling for wallet modal components */
+[data-rk] {
+  /* Ensure modal backdrop matches site theme */
+  --rk-colors-modalBackdrop: rgba(0, 0, 0, 0.7);
+}
+
+/* Custom styling for the connect button to match site gradients */
+button[data-testid="rk-connect-button"] {
+  background: linear-gradient(135deg, #6366f1 0%, #a855f7 50%, #ec4899 100%) !important;
+  border: 1px solid rgba(168, 85, 247, 0.3) !important;
+  box-shadow: 0 10px 25px -3px rgba(168, 85, 247, 0.25), 0 4px 6px -2px rgba(168, 85, 247, 0.1) !important;
+  backdrop-filter: blur(8px) !important;
+}
+
+button[data-testid="rk-connect-button"]:hover {
+  background: linear-gradient(135deg, #5b21b6 0%, #9333ea 50%, #db2777 100%) !important;
+  transform: translateY(-1px) !important;
+}
+
+/* Style the account button when connected */
+button[data-testid="rk-account-button"] {
+  background: rgba(31, 41, 55, 0.8) !important;
+  border: 1px solid rgba(156, 163, 175, 0.3) !important;
+  backdrop-filter: blur(8px) !important;
+}
+
+/* Wallet modal styling */
+div[data-rk] div[role="dialog"] {
+  background: rgba(17, 24, 39, 0.95) !important;
+  border: 1px solid rgba(156, 163, 175, 0.3) !important;
+  backdrop-filter: blur(12px) !important;
+}

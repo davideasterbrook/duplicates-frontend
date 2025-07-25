@@ -1,0 +1,206 @@
+{
+  "name": "Opepen Edition",
+  "contractAddress": "0x6339e5e072086621540d0362c4e3cea0d643e114",
+  "slug": "opepen-edition",
+  "tokens": [
+    "14468",
+    "8625",
+    "151",
+    "12292",
+    "3634"
+  ],
+  "folder": "opepen-edition",
+  "nfts": [
+    {
+      "name": "8x8, Set 001, Ed. 4",
+      "description": "This artwork may or may not be handmade.",
+      "image": "https://i2.seadn.io/ethereum/0x6339e5e072086621540d0362c4e3cea0d643e114/722c658a0b1d49db9fc120d6a5bde1/e6722c658a0b1d49db9fc120d6a5bde1.png",
+      "imageOriginal": "https://i2.seadn.io/ethereum/0x6339e5e072086621540d0362c4e3cea0d643e114/722c658a0b1d49db9fc120d6a5bde1/e6722c658a0b1d49db9fc120d6a5bde1.png",
+      "attributes": [
+        {
+          "trait_type": "Artist",
+          "value": "Jack Butcher"
+        },
+        {
+          "trait_type": "Release",
+          "value": "1"
+        },
+        {
+          "trait_type": "Set",
+          "value": "8x8"
+        },
+        {
+          "trait_type": "Opepen",
+          "value": "XII"
+        },
+        {
+          "trait_type": "Edition Size",
+          "value": "Four"
+        },
+        {
+          "trait_type": "Revealed",
+          "value": "Yes"
+        },
+        {
+          "trait_type": "Number",
+          "value": "14468"
+        }
+      ],
+      "tokenId": "14468",
+      "contractAddress": "0x6339e5e072086621540d0362c4e3cea0d643e114"
+    },
+    {
+      "name": "8x8, Set 001, Ed. 5",
+      "description": "This artwork may or may not be handmade.",
+      "image": "https://i2.seadn.io/ethereum/0x6339e5e072086621540d0362c4e3cea0d643e114/11b54b7d717161e9853dc350f30f55/1511b54b7d717161e9853dc350f30f55.png",
+      "imageOriginal": "https://i2.seadn.io/ethereum/0x6339e5e072086621540d0362c4e3cea0d643e114/11b54b7d717161e9853dc350f30f55/1511b54b7d717161e9853dc350f30f55.png",
+      "attributes": [
+        {
+          "trait_type": "Artist",
+          "value": "Jack Butcher"
+        },
+        {
+          "trait_type": "Release",
+          "value": "1"
+        },
+        {
+          "trait_type": "Set",
+          "value": "8x8"
+        },
+        {
+          "trait_type": "Opepen",
+          "value": "IX"
+        },
+        {
+          "trait_type": "Edition Size",
+          "value": "Five"
+        },
+        {
+          "trait_type": "Revealed",
+          "value": "Yes"
+        },
+        {
+          "trait_type": "Number",
+          "value": "8625"
+        }
+      ],
+      "tokenId": "8625",
+      "contractAddress": "0x6339e5e072086621540d0362c4e3cea0d643e114"
+    },
+    {
+      "name": "8x8, Set 001, Ed. 1",
+      "description": "This artwork may or may not be handmade.",
+      "image": "https://i2.seadn.io/ethereum/0x6339e5e072086621540d0362c4e3cea0d643e114/558a1d10e65adfeccb6c8d730d2810/2d558a1d10e65adfeccb6c8d730d2810.png",
+      "imageOriginal": "https://i2.seadn.io/ethereum/0x6339e5e072086621540d0362c4e3cea0d643e114/558a1d10e65adfeccb6c8d730d2810/2d558a1d10e65adfeccb6c8d730d2810.png",
+      "attributes": [
+        {
+          "trait_type": "Artist",
+          "value": "Jack Butcher"
+        },
+        {
+          "trait_type": "Release",
+          "value": "1"
+        },
+        {
+          "trait_type": "Set",
+          "value": "8x8"
+        },
+        {
+          "trait_type": "Opepen",
+          "value": "XVI"
+        },
+        {
+          "trait_type": "Edition Size",
+          "value": "One"
+        },
+        {
+          "trait_type": "Revealed",
+          "value": "Yes"
+        },
+        {
+          "trait_type": "Number",
+          "value": "151"
+        }
+      ],
+      "tokenId": "151",
+      "contractAddress": "0x6339e5e072086621540d0362c4e3cea0d643e114"
+    },
+    {
+      "name": "8x8, Set 001, Ed. 10",
+      "description": "This artwork may or may not be handmade.",
+      "image": "https://i2.seadn.io/ethereum/0x6339e5e072086621540d0362c4e3cea0d643e114/f5180c6e26fdbd25da5e73ddb55e7e/5bf5180c6e26fdbd25da5e73ddb55e7e.png",
+      "imageOriginal": "https://i2.seadn.io/ethereum/0x6339e5e072086621540d0362c4e3cea0d643e114/f5180c6e26fdbd25da5e73ddb55e7e/5bf5180c6e26fdbd25da5e73ddb55e7e.png",
+      "attributes": [
+        {
+          "trait_type": "Artist",
+          "value": "Jack Butcher"
+        },
+        {
+          "trait_type": "Release",
+          "value": "1"
+        },
+        {
+          "trait_type": "Set",
+          "value": "8x8"
+        },
+        {
+          "trait_type": "Opepen",
+          "value": "V"
+        },
+        {
+          "trait_type": "Edition Size",
+          "value": "Ten"
+        },
+        {
+          "trait_type": "Revealed",
+          "value": "Yes"
+        },
+        {
+          "trait_type": "Number",
+          "value": "12292"
+        }
+      ],
+      "tokenId": "12292",
+      "contractAddress": "0x6339e5e072086621540d0362c4e3cea0d643e114"
+    },
+    {
+      "name": "8x8, Set 001, Ed. 40",
+      "description": "This artwork may or may not be handmade.",
+      "image": "https://i2.seadn.io/ethereum/0x6339e5e072086621540d0362c4e3cea0d643e114/8d322776385084d599b6c17df5253c/fe8d322776385084d599b6c17df5253c.png",
+      "imageOriginal": "https://i2.seadn.io/ethereum/0x6339e5e072086621540d0362c4e3cea0d643e114/8d322776385084d599b6c17df5253c/fe8d322776385084d599b6c17df5253c.png",
+      "attributes": [
+        {
+          "trait_type": "Artist",
+          "value": "Jack Butcher"
+        },
+        {
+          "trait_type": "Release",
+          "value": "1"
+        },
+        {
+          "trait_type": "Set",
+          "value": "8x8"
+        },
+        {
+          "trait_type": "Opepen",
+          "value": "I"
+        },
+        {
+          "trait_type": "Edition Size",
+          "value": "Forty"
+        },
+        {
+          "trait_type": "Revealed",
+          "value": "Yes"
+        },
+        {
+          "trait_type": "Number",
+          "value": "3634"
+        }
+      ],
+      "tokenId": "3634",
+      "contractAddress": "0x6339e5e072086621540d0362c4e3cea0d643e114"
+    }
+  ],
+  "fetchedAt": "2025-07-22T16:14:16.872Z"
+}

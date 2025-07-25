@@ -1,0 +1,110 @@
+{
+  "name": "LilPudgys",
+  "contractAddress": "0x524cab2ec69124574082676e6f654a18df49a048",
+  "slug": "lilpudgys",
+  "tokens": [
+    "16343",
+    "21396",
+    "5447",
+    "10369",
+    "19779"
+  ],
+  "folder": "lilpudgys",
+  "nfts": [
+    {
+      "name": "Lil Pudgy #16343",
+      "description": "Lil Pudgys are a collection of 22,222 randomly generated NFTs minted on Ethereum.",
+      "image": "https://i2.seadn.io/ethereum/0x524cab2ec69124574082676e6f654a18df49a048/a56d5ddcd9087038f6867a736226de/16a56d5ddcd9087038f6867a736226de.png",
+      "imageOriginal": "https://i2.seadn.io/ethereum/0x524cab2ec69124574082676e6f654a18df49a048/a56d5ddcd9087038f6867a736226de/16a56d5ddcd9087038f6867a736226de.png",
+      "attributes": [
+        {
+          "trait_type": "Legendary",
+          "value": "Taco"
+        }
+      ],
+      "tokenId": "16343",
+      "contractAddress": "0x524cab2ec69124574082676e6f654a18df49a048"
+    },
+    {
+      "name": "Lil Pudgy #21396",
+      "description": "Lil Pudgys are a collection of 22,222 randomly generated NFTs minted on Ethereum.",
+      "image": "https://i2.seadn.io/ethereum/0x524cab2ec69124574082676e6f654a18df49a048/dcc0a544aedb6087fec361e1340b51/1cdcc0a544aedb6087fec361e1340b51.png",
+      "imageOriginal": "https://i2.seadn.io/ethereum/0x524cab2ec69124574082676e6f654a18df49a048/dcc0a544aedb6087fec361e1340b51/1cdcc0a544aedb6087fec361e1340b51.png",
+      "attributes": [
+        {
+          "trait_type": "Legendary",
+          "value": "Jetpack"
+        }
+      ],
+      "tokenId": "21396",
+      "contractAddress": "0x524cab2ec69124574082676e6f654a18df49a048"
+    },
+    {
+      "name": "Lil Pudgy #5447",
+      "description": "Lil Pudgys are a collection of 22,222 randomly generated NFTs minted on Ethereum.",
+      "image": "https://i2.seadn.io/ethereum/0x524cab2ec69124574082676e6f654a18df49a048/40d861840de402a0b9bfa8c0e10e8a/8640d861840de402a0b9bfa8c0e10e8a.png",
+      "imageOriginal": "https://i2.seadn.io/ethereum/0x524cab2ec69124574082676e6f654a18df49a048/40d861840de402a0b9bfa8c0e10e8a/8640d861840de402a0b9bfa8c0e10e8a.png",
+      "attributes": [
+        {
+          "trait_type": "Legendary",
+          "value": "Avocado"
+        }
+      ],
+      "tokenId": "5447",
+      "contractAddress": "0x524cab2ec69124574082676e6f654a18df49a048"
+    },
+    {
+      "name": "Lil Pudgy #10369",
+      "description": "Lil Pudgys are a collection of 22,222 randomly generated NFTs minted on Ethereum.",
+      "image": "https://i2.seadn.io/ethereum/0x524cab2ec69124574082676e6f654a18df49a048/32223a8ffdf6f53f46111ff13e4c60/8832223a8ffdf6f53f46111ff13e4c60.png",
+      "imageOriginal": "https://i2.seadn.io/ethereum/0x524cab2ec69124574082676e6f654a18df49a048/32223a8ffdf6f53f46111ff13e4c60/8832223a8ffdf6f53f46111ff13e4c60.png",
+      "attributes": [
+        {
+          "trait_type": "Pudgy Knight",
+          "value": "Red"
+        }
+      ],
+      "tokenId": "10369",
+      "contractAddress": "0x524cab2ec69124574082676e6f654a18df49a048"
+    },
+    {
+      "name": "Lil Pudgy #19779",
+      "description": "Lil Pudgys are a collection of 22,222 randomly generated NFTs minted on Ethereum.",
+      "image": "https://i2.seadn.io/ethereum/0x524cab2ec69124574082676e6f654a18df49a048/ef7a235de3fb2c59e6b2c6c0b33941/5fef7a235de3fb2c59e6b2c6c0b33941.png",
+      "imageOriginal": "https://i2.seadn.io/ethereum/0x524cab2ec69124574082676e6f654a18df49a048/ef7a235de3fb2c59e6b2c6c0b33941/5fef7a235de3fb2c59e6b2c6c0b33941.png",
+      "attributes": [
+        {
+          "trait_type": "Background",
+          "value": "Beige"
+        },
+        {
+          "trait_type": "Skin",
+          "value": "Ice"
+        },
+        {
+          "trait_type": "Body",
+          "value": "Scarf Green"
+        },
+        {
+          "trait_type": "Face",
+          "value": "Normal"
+        },
+        {
+          "trait_type": "Left Flipper",
+          "value": "None"
+        },
+        {
+          "trait_type": "Head",
+          "value": "Ice Crown"
+        },
+        {
+          "trait_type": "Right Flipper",
+          "value": "None"
+        }
+      ],
+      "tokenId": "19779",
+      "contractAddress": "0x524cab2ec69124574082676e6f654a18df49a048"
+    }
+  ],
+  "fetchedAt": "2025-07-22T16:14:11.080Z"
+}
