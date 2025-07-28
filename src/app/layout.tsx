@@ -5,6 +5,12 @@ import { Providers } from "./providers";
 
 export const metadata: Metadata = {
   title: "Duplicates Web",
+  description: "NFT minting and management platform for creating duplicates of existing NFTs",
+  icons: {
+    icon: "/favicon.svg",
+    shortcut: "/favicon.svg",
+    apple: "/favicon.svg",
+  },
 };
 
 export default function RootLayout(props: {children: ReactNode}) {

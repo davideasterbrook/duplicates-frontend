@@ -156,4 +156,6 @@ Test the application with these well-known NFT contracts:
 This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
 
 # Future Work
+- Add debug tab for contract owner
+- SEO
 - Update testing

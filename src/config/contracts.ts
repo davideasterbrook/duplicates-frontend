@@ -31,8 +31,8 @@ export const CHAIN_CONFIGS: Record<number, ChainConfig> = {
     name: 'Ethereum Mainnet',
     contracts: {
       nftMinter: {
-        address: '0x', // Mainnet contract address - deploy before production
-        deployedBlock: 0, // Will be set when mainnet contract is deployed
+        address: '0xe14942066fE9d1cbFa8a343C7A8B7d38F6B9B0f5',
+        deployedBlock: 23017016,
         name: 'NFT Minter - Mainnet'
       }
     }

@@ -8,14 +8,17 @@ if (!process.env.NEXT_PUBLIC_WALLETCONNECT_PROJECT_ID) {
   throw new Error('NEXT_PUBLIC_WALLETCONNECT_PROJECT_ID is required. Please add it to your .env.local file.');
 }
 
+// Use explicit chain arrays with proper typing
+const developmentChains = [anvil, mainnet, sepolia] as const;
+const productionChains = [mainnet] as const;
+
 export default getDefaultConfig({
-    chains: [anvil, mainnet, sepolia],
+    chains: process.env.NODE_ENV === 'development' ? developmentChains : productionChains,
     projectId: process.env.NEXT_PUBLIC_WALLETCONNECT_PROJECT_ID,
     appName: "Duplicates Web",
     ssr: false,
-    // Add explicit multiInjectedProviderDiscovery for better wallet detection
     multiInjectedProviderDiscovery: true,
-})
+});
 
 // Custom theme matching the site design
 export const customTheme = {
