@@ -2,13 +2,7 @@
  * IPFS utility functions for handling NFT metadata and images
  */
 
-// Cache for failed requests to prevent retrying
-const failedRequestsCache = new Map<string, { timestamp: number; error: string }>();
-const FAILED_CACHE_TTL = 5 * 60 * 1000; // 5 minutes
-
-// Cache for successful metadata to reduce redundant requests
-const metadataCache = new Map<string, { data: any; timestamp: number }>();
-const METADATA_CACHE_TTL = 10 * 60 * 1000; // 10 minutes
+import { metadataCache, failedRequestsCache } from './cache';
 
 const IPFS_GATEWAYS = [
   'https://ipfs.io/ipfs/',
@@ -42,49 +36,31 @@ export function ipfsToHttp(ipfsUrl: string, gatewayIndex: number = 0): string {
 }
 
 /**
- * Clear expired cache entries
+ * Clear expired cache entries (now handled automatically by LRU cache)
  */
-function clearExpiredCache() {
-  const now = Date.now();
-  
-  // Clear expired failed requests
-  for (const [key, value] of failedRequestsCache.entries()) {
-    if (now - value.timestamp > FAILED_CACHE_TTL) {
-      failedRequestsCache.delete(key);
-    }
-  }
-  
-  // Clear expired metadata
-  for (const [key, value] of metadataCache.entries()) {
-    if (now - value.timestamp > METADATA_CACHE_TTL) {
-      metadataCache.delete(key);
-    }
-  }
-}
+// function _clearExpiredCache() {
+  // Cache cleanup is now handled automatically by LRU implementation
+  // This function is kept for backward compatibility but does nothing
+// }
 
 /**
  * Fetch data from IPFS with fallback gateways and caching
  */
-export async function fetchFromIpfs(ipfsUrl: string): Promise<any> {
+export async function fetchFromIpfs(ipfsUrl: string): Promise<Record<string, unknown>> {
   if (!ipfsUrl) {
     throw new Error('No IPFS URL provided');
   }
 
-  // Clean expired cache entries occasionally
-  if (Math.random() < 0.1) {
-    clearExpiredCache();
-  }
-
   // Check if this URL recently failed
   const cachedFailure = failedRequestsCache.get(ipfsUrl);
-  if (cachedFailure && Date.now() - cachedFailure.timestamp < FAILED_CACHE_TTL) {
+  if (cachedFailure) {
     throw new Error(`Cached failure: ${cachedFailure.error}`);
   }
 
   // Check if we have cached metadata
   const cachedMetadata = metadataCache.get(ipfsUrl);
-  if (cachedMetadata && Date.now() - cachedMetadata.timestamp < METADATA_CACHE_TTL) {
-    return cachedMetadata.data;
+  if (cachedMetadata) {
+    return cachedMetadata;
   }
 
   let lastError: Error | null = null;
@@ -119,7 +95,7 @@ export async function fetchFromIpfs(ipfsUrl: string): Promise<any> {
       }
       
       // Cache successful result
-      metadataCache.set(ipfsUrl, { data, timestamp: Date.now() });
+      metadataCache.set(ipfsUrl, data);
       
       // Remove from failed cache if it was there
       failedRequestsCache.delete(ipfsUrl);
@@ -130,7 +106,7 @@ export async function fetchFromIpfs(ipfsUrl: string): Promise<any> {
       lastError = error as Error;
       // Only log the first gateway failure to reduce noise
       if (i === 0) {
-        console.warn(`Failed to fetch from IPFS URL: ${ipfsUrl}`, error);
+        // Failed to fetch from IPFS URL - will try alternatives
       }
       continue;
     }
@@ -138,10 +114,7 @@ export async function fetchFromIpfs(ipfsUrl: string): Promise<any> {
 
   // Cache the failure to prevent retrying soon
   const errorMessage = lastError?.message || 'All IPFS gateways failed';
-  failedRequestsCache.set(ipfsUrl, { 
-    timestamp: Date.now(), 
-    error: errorMessage 
-  });
+  failedRequestsCache.set(ipfsUrl, { error: errorMessage });
 
   throw lastError || new Error('All IPFS gateways failed');
 }
@@ -149,7 +122,7 @@ export async function fetchFromIpfs(ipfsUrl: string): Promise<any> {
 /**
  * Extract image URL from NFT metadata
  */
-export function extractImageFromMetadata(metadata: any): string {
+export function extractImageFromMetadata(metadata: Record<string, unknown>): string {
   if (!metadata || typeof metadata !== 'object') {
     return '';
   }
@@ -158,8 +131,8 @@ export function extractImageFromMetadata(metadata: any): string {
   const imageFields = ['image', 'image_url', 'imageUrl', 'animation_url'];
   
   for (const field of imageFields) {
-    if (metadata[field]) {
-      return metadata[field];
+    if (metadata[field] && typeof metadata[field] === 'string') {
+      return metadata[field] as string;
     }
   }
 

@@ -58,6 +58,7 @@ export default function Inspiration({ onSelectNft }: InspirationProps) {
                   alt={selectedNft.name}
                   className="w-full h-full"
                   preserveAspectRatio={true}
+                  priority={true}
                 />
               </div>
             </div>
@@ -262,7 +263,7 @@ export default function Inspiration({ onSelectNft }: InspirationProps) {
               >
                 {/* Collection Preview Images */}
                 <div className="grid grid-cols-3 gap-2 mb-6 h-32">
-                  {collection.nfts.slice(0, 3).map((nft, index) => (
+                  {collection.nfts.slice(0, 3).map((nft, _index) => (
                     <div key={nft.tokenId} className="relative bg-gradient-to-br from-gray-700 to-gray-800 rounded-lg overflow-hidden">
                       <ImageWithFallback
                         src={nft.image}

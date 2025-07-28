@@ -11,7 +11,7 @@ import {
   fetchFromIpfs, 
   extractImageFromMetadata, 
   sanitizeImageUrl, 
-  isBase64Image 
+  // isBase64Image 
 } from "@/utils/ipfs";
 import { 
   AppError, 
@@ -56,8 +56,9 @@ interface MintingFormProps {
 }
 
 export default function MintingForm({ prefilledContract, prefilledTokenId, inspirationNft }: MintingFormProps) {
+  const [isHydrated, setIsHydrated] = useState(false);
   const account = useAccount();
-  const { isConnected, address: userAddress } = account;
+  const { isConnected, address: userAddress, status } = account;
   const config = useConfig();
   
   // Duplicates contract configuration (YOUR contract that will mint copies)
@@ -185,7 +186,7 @@ export default function MintingForm({ prefilledContract, prefilledTokenId, inspi
             args: [],
           });
           setMintingCost(cost);
-        } catch (error) {
+        } catch {
           setMintingCost(null);
         }
       } else {
@@ -252,17 +253,18 @@ export default function MintingForm({ prefilledContract, prefilledTokenId, inspi
         args: [BigInt(tokenId)],
       });
       return true;
-    } catch (error: any) {
+    } catch (error: unknown) {
       // Check if it's a "function does not exist" error vs "token doesn't exist" error
-      if (error?.message?.includes('function selector was not recognized') ||
-          error?.message?.includes('function does not exist') ||
-          error?.message?.includes('execution reverted: ERC721: invalid token ID') ||
-          error?.message?.includes('ERC721NonexistentToken') ||
-          error?.message?.includes('token does not exist')) {
+      const errorMessage = error instanceof Error ? error.message : '';
+      if (errorMessage.includes('function selector was not recognized') ||
+          errorMessage.includes('function does not exist') ||
+          errorMessage.includes('execution reverted: ERC721: invalid token ID') ||
+          errorMessage.includes('ERC721NonexistentToken') ||
+          errorMessage.includes('token does not exist')) {
         
         // More specific error messages
-        if (error?.message?.includes('function selector was not recognized') ||
-            error?.message?.includes('function does not exist')) {
+        if (errorMessage.includes('function selector was not recognized') ||
+            errorMessage.includes('function does not exist')) {
           setInlineError("This contract does not support the tokenURI function. It may not be a standard ERC721 NFT contract.");
         } else {
           setInlineError("Token ID does not exist in this contract. Please check the token ID and try again.");
@@ -335,30 +337,31 @@ export default function MintingForm({ prefilledContract, prefilledTokenId, inspi
       setNftMetadata(metadata);
       
       // Extract and process image URL
-      const imageUrl = extractImageFromMetadata(metadata);
+      const imageUrl = extractImageFromMetadata(metadata as Record<string, unknown>);
       if (imageUrl) {
         const sanitizedUrl = sanitizeImageUrl(imageUrl);
         setNftImageUrl(sanitizedUrl);
       }
       
-    } catch (error: any) {
+    } catch (error: unknown) {
       // Handle errors with inline messages instead of popups
-      if (error?.message?.includes('execution reverted') || 
-          error?.message?.includes('tokenURI') ||
-          error?.message?.includes('invalid address')) {
+      const errorMessage = error instanceof Error ? error.message : '';
+      if (errorMessage.includes('execution reverted') || 
+          errorMessage.includes('tokenURI') ||
+          errorMessage.includes('invalid address')) {
         setInlineError("Failed to fetch NFT data. The contract may not be a valid ERC721 NFT or the token ID may not exist.");
-      } else if (error?.message?.includes('network') || 
-                 error?.message?.includes('fetch') || 
-                 error?.message?.includes('timeout')) {
+      } else if (errorMessage.includes('network') || 
+                 errorMessage.includes('fetch') || 
+                 errorMessage.includes('timeout')) {
         setInlineError("Network error while fetching NFT metadata. Please check your connection and try again.");
-      } else if (error?.message?.includes('JSON')) {
+      } else if (errorMessage.includes('JSON')) {
         setInlineError("Failed to parse NFT metadata. The metadata format may be corrupted.");
       } else {
         setInlineError("Unable to fetch NFT metadata. Please verify the contract address and token ID.");
       }
       
       // Still log errors for debugging
-      const appError = error?.message?.includes('execution reverted') ? parseContractError(error) : parseIpfsError(error);
+      const appError = errorMessage.includes('execution reverted') ? parseContractError(error) : parseIpfsError(error);
       logError(appError);
       
     } finally {
@@ -440,28 +443,29 @@ export default function MintingForm({ prefilledContract, prefilledTokenId, inspi
       setMintTxHash(txHash);
 
       // Wait for transaction confirmation
-      const receipt = await waitForTransactionReceipt(config, {
+      await waitForTransactionReceipt(config, {
         hash: txHash,
       });
 
       setMintSuccess(true);
       
 
-    } catch (error: any) {
+    } catch (error: unknown) {
       // Handle different types of errors with inline messages
-      if (error?.message?.includes('User rejected')) {
+      const errorMessage = error instanceof Error ? error.message : '';
+      if (errorMessage.includes('User rejected')) {
         setInlineError("Transaction was cancelled by user");
-      } else if (error?.message?.includes('insufficient funds')) {
+      } else if (errorMessage.includes('insufficient funds')) {
         setInlineError("Insufficient funds to pay for gas and minting cost");
-      } else if (error?.message?.includes('execution reverted')) {
-        if (error?.message?.includes('mint to the zero address')) {
+      } else if (errorMessage.includes('execution reverted')) {
+        if (errorMessage.includes('mint to the zero address')) {
           setInlineError("Minting failed: Contract received zero address. Try disconnecting and reconnecting your wallet.");
         } else {
           setInlineError("Transaction failed. The contract may have specific requirements or the NFT might not be mintable.");
         }
-      } else if (error?.message?.includes('connector not found') || error?.message?.includes('wagmi')) {
+      } else if (errorMessage.includes('connector not found') || errorMessage.includes('wagmi')) {
         setInlineError("Wallet connection issue. Please refresh the page and reconnect your wallet.");
-      } else if (error?.message?.includes('Cannot convert undefined to a BigInt') || error?.message?.includes('BigInt')) {
+      } else if (errorMessage.includes('Cannot convert undefined to a BigInt') || errorMessage.includes('BigInt')) {
         setInlineError("Transaction failed to submit properly. Check your wallet connection and try again.");
       } else {
         setInlineError("Minting failed. Please try again or check your wallet connection.");
@@ -487,7 +491,25 @@ export default function MintingForm({ prefilledContract, prefilledTokenId, inspi
     mintingCost
   ]);
 
+  // Hydration effect - wait for wallet status to be determined
+  useEffect(() => {
+    // Wait for wagmi to determine connection status
+    if (status === 'disconnected' || status === 'connected') {
+      setIsHydrated(true);
+    }
+  }, [status]);
 
+  // Show loading state until wallet status is determined
+  if (!isHydrated) {
+    return (
+      <div className="min-h-screen bg-gradient-to-br from-gray-950 via-gray-900 to-gray-950 flex items-center justify-center">
+        <div className="flex flex-col items-center space-y-4">
+          <div className="animate-spin rounded-full h-12 w-12 border-b-2 border-purple-500"></div>
+          <p className="text-gray-400 text-sm">Loading...</p>
+        </div>
+      </div>
+    );
+  }
   
   return (
     <div className="min-h-screen bg-gradient-to-br from-gray-950 via-gray-900 to-gray-950">
@@ -530,6 +552,7 @@ export default function MintingForm({ prefilledContract, prefilledTokenId, inspi
                         alt={currentInspirationNft.name}
                         className="max-w-full max-h-full"
                         preserveAspectRatio={true}
+                        priority={true}
                         onLoad={() => setIsCurrentImageLoaded(true)}
                       />
                       {isCurrentImageLoaded && (

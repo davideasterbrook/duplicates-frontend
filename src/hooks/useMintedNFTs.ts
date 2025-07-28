@@ -88,7 +88,7 @@ export function useMintedNFTs(): UseMintedNFTsResult {
   const [totalSupply, setTotalSupply] = useState(0);
   const [currentPage, setCurrentPage] = useState(0);
   const [pageSize] = useState(DEFAULT_PAGE_SIZE);
-  const [allLoadingProgress, setAllLoadingProgress] = useState({ loaded: 0, total: 0 });
+  const [allLoadingProgress] = useState({ loaded: 0, total: 0 });
   
   // Get total supply
   const fetchTotalSupply = useCallback(async (): Promise<number> => {
@@ -101,8 +101,8 @@ export function useMintedNFTs(): UseMintedNFTsResult {
         functionName: "totalSupply"
       });
       return Number(supply);
-    } catch (error) {
-      console.warn("Could not fetch total supply:", error);
+    } catch {
+      // Could not fetch total supply - using fallback
       return 0;
     }
   }, [contractReady, contractAddress, config]);
@@ -150,7 +150,7 @@ export function useMintedNFTs(): UseMintedNFTsResult {
         } catch (metadataError) {
           // Only log if it's not a cached failure to reduce noise
           if (!(metadataError instanceof Error) || !metadataError.message?.includes('Cached failure')) {
-            console.warn(`Failed to fetch metadata for token ${tokenId}:`, metadataError);
+            // Failed to fetch metadata - will show without metadata
           }
           
           // Return partial NFT with error flag
@@ -176,13 +176,13 @@ export function useMintedNFTs(): UseMintedNFTsResult {
         metadataError: false,
         imageError: !imageUrl && metadata && extractImageFromMetadata(metadata)
       };
-    } catch (error) {
-      console.warn(`Failed to fetch data for token ${tokenId}:`, error);
+    } catch {
+      // Failed to fetch token data - token will be excluded
       return { tokenId, owner };
     }
   }, [contractReady, contractAddress, config]);
 
-  // Load user's NFTs by checking ownership of all tokens
+  // Load user's NFTs by filtering from all NFTs
   const loadUserNFTs = useCallback(async () => {
     if (!contractReady || !contractAddress || !config || !address) {
       setUserError(contractError || createUserError("Contract or wallet not available"));
@@ -191,11 +191,11 @@ export function useMintedNFTs(): UseMintedNFTsResult {
 
     setUserLoading(true);
     setUserError(null);
-    setUserNFTs([]); // Clear existing NFTs for fresh progressive load
+    setUserNFTs([]);
     setUserLoadingProgress({ loaded: 0, total: 0 });
 
     try {
-      // Get total supply first
+      // Get total supply
       const supply = await fetchTotalSupply();
       setTotalSupply(supply);
 
@@ -206,44 +206,37 @@ export function useMintedNFTs(): UseMintedNFTsResult {
         return;
       }
 
-      // Check ownership for each token ID
+      // Check all tokens and filter for user ownership
       const userTokens: Array<{ tokenId: string; owner: string }> = [];
       
-      // Process tokens in batches for better performance
-      const batchSize = 20;
-      for (let i = 0; i < supply; i += batchSize) {
-        const batch = [];
-        const endIndex = Math.min(i + batchSize, supply);
-        
-        // Create batch of ownerOf calls
-        for (let tokenId = i; tokenId < endIndex; tokenId++) {
-          batch.push(
-            readContract(config, {
-              abi: erc721Abi,
-              address: contractAddress,
-              functionName: "ownerOf",
-              args: [BigInt(tokenId)]
-            }).then(owner => ({ tokenId: tokenId.toString(), owner: owner as string }))
-            .catch(() => null) // Token might be burned
-          );
-        }
+      // Set total for progress tracking
+      setUserLoadingProgress({ loaded: 0, total: supply });
 
-        // Execute batch
-        const batchResults = await Promise.all(batch);
-        
-        // Filter for user's tokens
-        for (const result of batchResults) {
-          if (result && result.owner.toLowerCase() === address.toLowerCase()) {
-            userTokens.push(result);
+      // Check ownership for all tokens
+      for (let tokenId = 0; tokenId < supply; tokenId++) {
+        try {
+          const owner = await readContract(config, {
+            abi: erc721Abi,
+            address: contractAddress,
+            functionName: "ownerOf",
+            args: [BigInt(tokenId)]
+          });
+          
+          // If user owns this token, add it to the list
+          if ((owner as string).toLowerCase() === address.toLowerCase()) {
+            userTokens.push({ tokenId: tokenId.toString(), owner: owner as string });
           }
+          
+          // Update progress
+          setUserLoadingProgress({ loaded: tokenId + 1, total: supply });
+          
+        } catch {
+          // Could not get owner - token may not exist
         }
       }
 
-      // Set total for progress tracking
-      setUserLoadingProgress({ loaded: 0, total: userTokens.length });
-
-      // Fetch metadata for user's tokens progressively
-      const allNfts: MintedNFT[] = [];
+      // Fetch metadata for user's tokens
+      const userNfts: MintedNFT[] = [];
       
       for (let i = 0; i < userTokens.length; i += METADATA_BATCH_SIZE) {
         const batch = userTokens.slice(i, i + METADATA_BATCH_SIZE);
@@ -251,29 +244,27 @@ export function useMintedNFTs(): UseMintedNFTsResult {
           batch.map(token => fetchTokenMetadata(token.tokenId, token.owner))
         );
         
-        // Add the new batch to the existing array
-        allNfts.push(...batchResults);
+        userNfts.push(...batchResults);
         
         // Update state with progressive results
-        const sortedNfts = [...allNfts].sort((a, b) => parseInt(b.tokenId) - parseInt(a.tokenId));
+        const sortedNfts = [...userNfts].sort((a, b) => parseInt(b.tokenId) - parseInt(a.tokenId));
         setUserNFTs(sortedNfts);
-        setUserLoadingProgress({ loaded: allNfts.length, total: userTokens.length });
         
-        // Add delay between batches to prevent overwhelming the network
+        // Add delay between batches
         if (i + METADATA_BATCH_SIZE < userTokens.length) {
           await new Promise(resolve => setTimeout(resolve, METADATA_BATCH_DELAY));
         }
       }
       
-    } catch (error: any) {
-      console.error('Error fetching user NFTs:', error);
-      const appError = error?.message?.includes('contract') 
+    } catch (error: unknown) {
+      // Error fetching user NFTs - will return empty array
+      const errorMessage = error instanceof Error ? error.message : '';
+      const appError = errorMessage.includes('contract') 
         ? parseContractError(error)
         : parseIpfsError(error);
       setUserError(appError);
     } finally {
       setUserLoading(false);
-      setUserLoadingProgress(prev => ({ ...prev, loaded: prev.total })); // Ensure loaded matches total when done
     }
   }, [contractReady, contractAddress, config, address, contractError, fetchTotalSupply, fetchTokenMetadata]);
 
@@ -329,8 +320,8 @@ export function useMintedNFTs(): UseMintedNFTsResult {
           });
           
           return { tokenId: tokenId.toString(), owner: owner as string };
-        } catch (ownerError) {
-          console.warn(`Could not get owner for token ${tokenId}:`, ownerError);
+        } catch {
+          // Could not get owner - token may not exist
           return null;
         }
       });
@@ -356,9 +347,10 @@ export function useMintedNFTs(): UseMintedNFTsResult {
 
       setAllNFTs(nftsWithMetadata);
       
-    } catch (error: any) {
-      console.error('Error fetching all NFTs:', error);
-      const appError = error?.message?.includes('contract') 
+    } catch (error: unknown) {
+      // Error fetching all NFTs - will return empty array
+      const errorMessage = error instanceof Error ? error.message : '';
+      const appError = errorMessage.includes('contract') 
         ? parseContractError(error)
         : parseIpfsError(error);
       setAllError(appError);

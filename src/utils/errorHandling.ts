@@ -42,8 +42,10 @@ export function createServerError(message: string, originalError?: Error): AppEr
 /**
  * Parse contract call errors to user-friendly messages
  */
-export function parseContractError(error: any): AppError {
-  const errorMessage = error?.message || error?.toString() || 'Unknown error';
+export function parseContractError(error: unknown): AppError {
+  const errorMessage = error instanceof Error ? error.message : 
+                      typeof error === 'string' ? error : 
+                      'Unknown error';
   
   // Common contract error patterns
   if (errorMessage.includes('execution reverted')) {
@@ -55,11 +57,11 @@ export function parseContractError(error: any): AppError {
   }
   
   if (errorMessage.includes('network')) {
-    return createServerError('Network connection issue', error);
+    return createServerError('Network connection issue', error instanceof Error ? error : undefined);
   }
   
   if (errorMessage.includes('timeout')) {
-    return createServerError('Request timed out', error);
+    return createServerError('Request timed out', error instanceof Error ? error : undefined);
   }
   
   // Default to user error for contract issues
@@ -69,22 +71,24 @@ export function parseContractError(error: any): AppError {
 /**
  * Parse IPFS fetch errors
  */
-export function parseIpfsError(error: any): AppError {
-  const errorMessage = error?.message || error?.toString() || 'Unknown error';
+export function parseIpfsError(error: unknown): AppError {
+  const errorMessage = error instanceof Error ? error.message : 
+                      typeof error === 'string' ? error : 
+                      'Unknown error';
   
   if (errorMessage.includes('timeout') || errorMessage.includes('AbortError')) {
-    return createServerError('IPFS request timed out', error);
+    return createServerError('IPFS request timed out', error instanceof Error ? error : undefined);
   }
   
   if (errorMessage.includes('Failed to fetch') || errorMessage.includes('NetworkError')) {
-    return createServerError('Failed to fetch from IPFS', error);
+    return createServerError('Failed to fetch from IPFS', error instanceof Error ? error : undefined);
   }
   
   if (errorMessage.includes('JSON')) {
-    return createServerError('Invalid metadata format', error);
+    return createServerError('Invalid metadata format', error instanceof Error ? error : undefined);
   }
   
-  return createServerError('IPFS fetch failed', error);
+  return createServerError('IPFS fetch failed', error instanceof Error ? error : undefined);
 }
 
 /**
@@ -99,10 +103,13 @@ export function logError(error: AppError): void {
     timestamp: new Date().toISOString()
   };
   
-  if (error.type === ErrorType.USER_ERROR) {
-    console.warn('User Error:', logData);
-  } else {
-    console.error('System Error:', logData);
+  // Only log in development
+  if (process.env.NODE_ENV === 'development') {
+    if (error.type === ErrorType.USER_ERROR) {
+      console.warn('User Error:', logData);
+    } else {
+      console.error('System Error:', logData);
+    }
   }
 }
 

@@ -21,14 +21,14 @@ export function getExampleImages(): ExampleImage[] {
     const images = getConfiguredImages();
     
     if (images.length === 0) {
-      console.info('No example images configured, using fallback');
+      // No example images configured, using fallback
       return getFallbackImages();
     }
 
     return images;
 
-  } catch (error) {
-    console.error('Failed to load configured images:', error);
+  } catch {
+    // Failed to load configured images - using fallback
     return getFallbackImages();
   }
 }

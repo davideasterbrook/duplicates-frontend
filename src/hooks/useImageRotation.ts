@@ -35,8 +35,8 @@ export function useImageRotation(intervalMs: number = 3000, fallbackImages: Exam
         setIsLoaded(new Array(fetchedImages.length).fill(false));
         setCurrentIndex(0);
         
-      } catch (err) {
-        console.error('Failed to load example images:', err);
+      } catch {
+        // Failed to load example images - using fallbacks
         
         if (fallbackImages.length > 0) {
           setImages(fallbackImages);
@@ -55,7 +55,7 @@ export function useImageRotation(intervalMs: number = 3000, fallbackImages: Exam
     }
     
     loadImages();
-  }, []);
+  }, [fallbackImages]);
   
   // Rotate images
   useEffect(() => {
@@ -82,7 +82,7 @@ export function useImageRotation(intervalMs: number = 3000, fallbackImages: Exam
         });
       };
       img.onerror = () => {
-        console.warn(`Failed to load example image: ${image.src}`);
+        // Image failed to load - will try next
         setIsLoaded(prev => {
           const newLoaded = [...prev];
           newLoaded[index] = false;

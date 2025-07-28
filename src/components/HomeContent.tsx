@@ -15,7 +15,7 @@ export default function HomeContent() {
     const [selectedInspirationNft, setSelectedInspirationNft] = useState<{
         contractAddress: string;
         tokenId: string;
-        nft: InspirationNft;
+        nft?: InspirationNft;
     } | null>(null);
 
     useEffect(() => {
@@ -28,12 +28,12 @@ export default function HomeContent() {
     };
 
     const handleDuplicateSelect = (contractAddress: string, tokenId: string) => {
-        setSelectedInspirationNft({ contractAddress, tokenId, nft: null as any });
+        setSelectedInspirationNft({ contractAddress, tokenId, nft: undefined });
         setActiveTab('mint');
     };
 
     if (!mounted) {
-        return null; // or a loading spinner
+        return null;
     }
 
     return (

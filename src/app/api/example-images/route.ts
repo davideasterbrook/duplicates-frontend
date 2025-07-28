@@ -5,7 +5,7 @@ import path from 'path';
 // Required for static export compatibility
 export const dynamic = 'force-dynamic';
 
-export async function GET(request: NextRequest) {
+export async function GET(_request: NextRequest) {
   try {
     const imagesDirectory = path.join(process.cwd(), 'public', 'example-nft-images');
     
@@ -44,8 +44,8 @@ export async function GET(request: NextRequest) {
       message: `Found ${images.length} example images`
     });
 
-  } catch (error) {
-    console.error('Error reading example images directory:', error);
+  } catch {
+    // Error reading example images directory;
     
     return NextResponse.json(
       { 

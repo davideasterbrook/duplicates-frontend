@@ -14,7 +14,7 @@ export default function AirdropForm() {
     const [error, setError] = useState("");
     const total: number = useMemo(() => calculateTotal(amount), [amount]);
     const {data:hash, isPending, writeContractAsync} = useWriteContract()
-    const { isLoading: isConfirming, isSuccess: isConfirmed, isError } = useWaitForTransactionReceipt({
+    useWaitForTransactionReceipt({
         confirmations: 1,
         hash,
     })
@@ -103,12 +103,12 @@ export default function AirdropForm() {
                 functionName: "approve",
                 args: [tSenderAddress as `0x${string}`, BigInt(total)],
             });
-            const approvalReceipt = await waitForTransactionReceipt(config, {
+            await waitForTransactionReceipt(config, {
                 hash: approvalHash,
             });
 
         } 
-        const airdropHash = await writeContractAsync({
+        await writeContractAsync({
                 abi: tsenderAbi,
                 address: tSenderAddress as `0x${string}`,
                 functionName: "airdropERC20",

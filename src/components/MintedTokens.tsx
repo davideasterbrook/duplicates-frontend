@@ -6,7 +6,7 @@ import { useNftMinterContract } from "@/hooks/useContract";
 import { ImageWithFallback } from "@/components/UI/ImageWithFallback";
 import ErrorPopup from "@/components/UI/ErrorPopup";
 import NFTPlaceholder from "@/components/UI/NFTPlaceholder";
-import { useState, useEffect, useMemo, useRef, forwardRef } from "react";
+import { useState, useEffect, useMemo, useRef, forwardRef, useCallback } from "react";
 import { readContract } from "@wagmi/core";
 import { duplicatesAbi } from "@/app/duplicatesAbi";
 
@@ -272,6 +272,8 @@ const NFTCard = forwardRef<HTMLDivElement, {
   );
 });
 
+NFTCard.displayName = 'NFTCard';
+
 function UserNFTsSection() {
   const { userNFTs, userLoading, userError, userLoadingProgress, loadUserNFTs } = useMintedNFTs();
   const { address } = useAccount();
@@ -304,30 +306,28 @@ function UserNFTsSection() {
       
       return () => window.removeEventListener('resize', handleResize);
     }
-  }, [showExpanded]);
+  }, [showExpanded]); // eslint-disable-line react-hooks/exhaustive-deps
   
   // Dynamic page size based on expanded state and screen width
   // Match the same breakpoints as the CSS grid: sm:2, lg:3, xl:4, 2xl:5
-  const getSingleRowPageSize = () => {
+  const getSingleRowPageSize = useCallback(() => {
     if (windowWidth >= 1536) return 5; // 2xl: 5 columns  
     if (windowWidth >= 1280) return 4; // xl: 4 columns
     if (windowWidth >= 1024) return 3; // lg: 3 columns
     if (windowWidth >= 640) return 2;  // sm: 2 columns
     return 1; // base: 1 column
-  };
+  }, [windowWidth]);
   
   const userPageSize = showExpanded ? 20 : getSingleRowPageSize();
   
   // Calculate columns per row for expanded view positioning
-  const getColumnsPerRow = () => {
+  const getColumnsPerRow = useCallback(() => {
     if (windowWidth >= 1536) return 5; // 2xl: 5 columns  
     if (windowWidth >= 1280) return 4; // xl: 4 columns
     if (windowWidth >= 1024) return 3; // lg: 3 columns
     if (windowWidth >= 640) return 2;  // sm: 2 columns
     return 1; // base: 1 column
-  };
-
-  if (!address) return null;
+  }, [windowWidth]);
 
   // Calculate pagination for user NFTs
   const totalUserNFTs = userNFTs.length;
@@ -358,6 +358,8 @@ function UserNFTsSection() {
     
     return rowStartIndex; // Insert at the beginning of the row
   }, [paginatedUserNFTs, expandedNFTId, expandedNFT, getColumnsPerRow]);
+
+  if (!address) return null;
 
   const userNextPage = () => {
     if (userHasNextPage) {
@@ -608,7 +610,7 @@ function UserNFTsSection() {
             </svg>
           </div>
           <h3 className="text-2xl font-bold text-white mb-2">No NFTs Found</h3>
-          <p className="text-gray-400 text-lg">You don't own any Duplicate NFTs yet.</p>
+          <p className="text-gray-400 text-lg">You don&apos;t own any Duplicate NFTs yet.</p>
           <p className="text-gray-500 text-sm mt-2">Try minting your first Duplicate NFT!</p>
         </div>
       ) : (
@@ -817,8 +819,8 @@ function AllNFTsSection({
         // Navigate to mint tab with pre-filled original contract details
         onNavigateToMint(originalMetadata.contract_address, originalMetadata.external_id.toString());
       }
-    } catch (error) {
-      console.error('Failed to fetch original NFT metadata:', error);
+    } catch {
+      // Failed to fetch original NFT metadata
     }
   };
 

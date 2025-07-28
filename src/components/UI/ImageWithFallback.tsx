@@ -1,4 +1,5 @@
 import React, { useState, useEffect } from 'react';
+import Image from 'next/image';
 
 interface ImageWithFallbackProps {
   src: string;
@@ -9,7 +10,8 @@ interface ImageWithFallbackProps {
   onLoad?: () => void;
   preserveAspectRatio?: boolean;
   lazy?: boolean;
-  maxRetries?: number;
+  priority?: boolean;
+  _maxRetries?: number;
 }
 
 // Cache for known bad image URLs to prevent retrying
@@ -25,13 +27,14 @@ export function ImageWithFallback({
   onLoad,
   preserveAspectRatio = false,
   lazy = true,
-  maxRetries = 1
+  priority = false,
+  _maxRetries = 1
 }: ImageWithFallbackProps) {
   const [imgSrc, setImgSrc] = useState(src);
   const [hasError, setHasError] = useState(false);
-  const [isLoading, setIsLoading] = useState(true);
+  const [, setIsLoading] = useState(true);
   const [imageKey, setImageKey] = useState(0);
-  const [retryCount, setRetryCount] = useState(0);
+  const [, setRetryCount] = useState(0);
   
   useEffect(() => {
     // Check if this image is known to be bad
@@ -97,15 +100,19 @@ export function ImageWithFallback({
   }
   
   return (
-    <img
-      key={imageKey}
-      src={imgSrc}
-      alt={alt}
-      className={`${preserveAspectRatio ? 'max-w-full max-h-full object-contain' : 'w-full h-full object-cover'} transition-opacity duration-300 ${className}`}
-      onError={handleError}
-      onLoad={handleLoad}
-      loading={lazy ? 'lazy' : 'eager'}
-      decoding="async"
-    />
+    <div className="relative w-full h-full">
+      <Image
+        key={imageKey}
+        src={imgSrc}
+        alt={alt}
+        fill
+        className={`${preserveAspectRatio ? 'object-contain' : 'object-cover'} transition-opacity duration-300 ${className}`}
+        onError={handleError}
+        onLoad={handleLoad}
+        loading={priority ? 'eager' : (lazy ? 'lazy' : 'eager')}
+        priority={priority}
+        sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw"
+      />
+    </div>
   );
 } 
