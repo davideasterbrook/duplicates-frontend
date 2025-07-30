@@ -15,6 +15,7 @@ export function Providers(props: {children: ReactNode}) {
     useEffect(() => {
         setMounted(true)
     }, [])
+
     
     // Create config only on client side to prevent SSR issues
     const config = useMemo(() => {
@@ -27,20 +28,16 @@ export function Providers(props: {children: ReactNode}) {
         
         const appUrl = process.env.NODE_ENV === 'development' 
             ? "http://localhost:3000" 
-            : "https://duplicates-frontend.vercel.app";
+            : "https://duplicates.knownblock.com";
             
         return getDefaultConfig({
             chains: process.env.NODE_ENV === 'development' ? developmentChains : productionChains,
             projectId: process.env.NEXT_PUBLIC_WALLETCONNECT_PROJECT_ID,
             appName: "Duplicates NFT",
             appDescription: "NFT minting and management platform for creating duplicates of existing NFTs",
-            appUrl,
-            appIcon: `${appUrl}/favicon.svg`,
+            appUrl: appUrl,
+            appIcon: `${appUrl}/favicon.svg`, 
             ssr: false,
-            multiInjectedProviderDiscovery: false,
-            batch: {
-                multicall: true,
-            },
         });
     }, [mounted]);
 
